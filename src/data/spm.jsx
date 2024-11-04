@@ -13,6 +13,7 @@ const questions = [
     ],
     "multipleChoice": false
   },
+  
   {
     "id": 2,
     "text": "Projects and which other artifact can be linked to either a program, a portfolio, both, or neither.",
@@ -140,8 +141,7 @@ const questions = [
     "correctAnswers": [
       "Activated by an admin (not by default).",
       "Requested from ServiceNow.",
-      "Activated by default in the base ServiceNow system.",
-      "Activated by an it_pps_admin."
+      "Activated by default in the base ServiceNow system."
     ],
     "multipleChoice": true
   },
@@ -559,7 +559,6 @@ const questions = [
       "Draft",
       "Approved",
       "Screening",
-      "Deferred"
     ],
     "multipleChoice": true
   },
@@ -992,9 +991,10 @@ const questions = [
       "admin"
     ],
     "correctAnswers": [
-      "it_pps_admin"
+      "it_pps_admin",
+      "admin"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 70,
@@ -1038,7 +1038,6 @@ const questions = [
       "Hours",
       "FTE",
       "Person Days.",
-      "Day"
     ],
     "multipleChoice": true
   },
@@ -1049,11 +1048,15 @@ const questions = [
       "Demand",
       "Requirement",
       "Project",
-      "Task\nE. Portfolio\nF. Program"
+      "Task",
+      "Portfolio",
+      "Program"
     ],
     "correctAnswers": [
       "Demand",
-      "Project"
+      "Project",
+      "Portfolio",
+      "Program"
     ],
     "multipleChoice": true
   },
@@ -2096,7 +2099,6 @@ const questions = [
       "Weekly",
       "Monthly",
       "Plan Duration",
-      "Daily"
     ],
     "multipleChoice": true
   },
@@ -2352,7 +2354,9 @@ const questions = [
       "Program record",
       "Project workspace",
       "Project status form",
-      "Planning console\nE. Project record\nF. Portfolio workbench"
+      "Planning console",
+      "Project record",
+      "Portfolio workbench"
     ],
     "correctAnswers": [
       "Project workspace",
