@@ -8,7 +8,7 @@ const Result = () => {
   const isPassed = state.scorePercentage >= passingScore;
 
   return (
-    <div className="text-center p-6 bg-white rounded shadow-md max-w-md w-full mx-auto">
+    <div className="text-center p-6 bg-white rounded shadow-md max-w-2xl w-full mx-auto">
       <h2 className={`text-2xl font-semibold ${isPassed ? 'text-green-500' : 'text-red-500'}`}>
         {isPassed ? "Passed!" : "Failed"}
       </h2>

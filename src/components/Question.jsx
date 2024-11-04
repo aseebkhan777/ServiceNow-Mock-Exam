@@ -23,7 +23,7 @@ const Question = ({ question, selectedOption, onSelectOption }) => {
   return (
     <div className="mb-4 text-left">
       <h3 className="text-lg font-semibold">{question.text}</h3> {/* Updated here */}
-      <div className="mt-2">
+      <div className="mt-2" >
         {question.options.map((option) => (
           <label key={option} className="block">
             <input
