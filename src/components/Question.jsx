@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Question = ({ question, selectedOption, onSelectOption }) => {
   const handleOptionChange = (option) => {
@@ -19,19 +19,21 @@ const Question = ({ question, selectedOption, onSelectOption }) => {
       onSelectOption(question.id, option);
     }
   };
-
   return (
     <div className="mb-4 text-left">
-      <h3 className="text-lg font-semibold">{question.text}</h3> {/* Updated here */}
-      <div className="mt-2" >
+      <h3 className="text-lg font-semibold">{question.text}</h3>{" "}
+      {/* Updated here */}
+      <div className="mt-2">
         {question.options.map((option) => (
           <label key={option} className="block">
             <input
               type={question.multipleChoice ? "checkbox" : "radio"}
               value={option}
-              checked={question.multipleChoice 
-                ? selectedOption && selectedOption.includes(option) 
-                : selectedOption === option}
+              checked={
+                question.multipleChoice
+                  ? selectedOption && selectedOption.includes(option)
+                  : selectedOption === option
+              }
               onChange={() => handleOptionChange(option)}
               className="mr-2"
             />
