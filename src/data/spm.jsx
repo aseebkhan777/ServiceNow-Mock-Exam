@@ -2113,7 +2113,8 @@ const questions = [
     ],
     "correctAnswers": [
       "Planned Cost",
-      "Allocated Cost"
+      "Allocated Cost",
+      "Actual Cost"
     ],
     "multipleChoice": true
   },
@@ -2359,7 +2360,9 @@ const questions = [
     ],
     "correctAnswers": [
       "Project workspace",
-      "Project status form"
+      "Project status form",
+      "Project record",
+      "Portfolio workbench"
     ],
     "multipleChoice": true
   },
