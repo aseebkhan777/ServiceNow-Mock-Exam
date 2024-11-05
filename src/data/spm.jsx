@@ -1614,7 +1614,6 @@ const questions = [
       "project",
       "demand",
       "program",
-      "portfolio"
     ],
     "multipleChoice": true
   },
