@@ -659,7 +659,8 @@ const questions = [
     ],
     "correctAnswers": [
       "User.",
-      "Configuration Item (CI)."
+      "Configuration Item (CI).",
+      "Fixed Asset."
     ],
     "multipleChoice": true
   },
