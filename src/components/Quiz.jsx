@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import questionBank from "../data/spm"; // Default question bank
 import HRSD from "../data/hrsd"; // HRSD question bank
+import ITSM from "../data/itsm";
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
 
@@ -16,7 +17,17 @@ const Quiz = () => {
 
   // Load and shuffle questions based on the selected exam type
   useEffect(() => {
-    const selectedQuestions = state.examType === "HRSD" ? HRSD : questionBank; // Determine question bank based on selected exam
+    let selectedQuestions;
+    switch (state.examType) {
+      case "HRSD":
+        selectedQuestions = HRSD;
+        break;
+      case "ITSM":
+        selectedQuestions = ITSM;
+        break;
+      default:
+        selectedQuestions = questionBank;
+    } // Determine question bank based on selected exam
     const initialQuestions = getRandomQuestions(selectedQuestions, 60).map(
       (q) => ({
         ...q,
