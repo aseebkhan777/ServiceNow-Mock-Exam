@@ -1524,8 +1524,7 @@ const questions = [
     "correctAnswers": [
       "Duration fields.",
       "Short description.",
-      "Planned dates.",
-      "State."
+      "Planned dates."
     ],
     "multipleChoice": true
   },
