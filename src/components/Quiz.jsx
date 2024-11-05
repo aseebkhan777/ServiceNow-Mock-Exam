@@ -17,7 +17,7 @@ const Quiz = () => {
   // Load and shuffle questions based on the selected exam type
   useEffect(() => {
     const selectedQuestions = state.examType === "HRSD" ? HRSD : questionBank; // Determine question bank based on selected exam
-    const initialQuestions = getRandomQuestions(selectedQuestions, 10).map(
+    const initialQuestions = getRandomQuestions(selectedQuestions, 60).map(
       (q) => ({
         ...q,
         options: shuffleArray(q.options),
