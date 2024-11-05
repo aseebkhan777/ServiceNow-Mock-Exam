@@ -659,7 +659,8 @@ const questions = [
     ],
     "correctAnswers": [
       "User.",
-      "Configuration Item (CI)."
+      "Configuration Item (CI).",
+      "Fixed Asset."
     ],
     "multipleChoice": true
   },
@@ -1524,8 +1525,7 @@ const questions = [
     "correctAnswers": [
       "Duration fields.",
       "Short description.",
-      "Planned dates.",
-      "State."
+      "Planned dates."
     ],
     "multipleChoice": true
   },
@@ -1614,7 +1614,6 @@ const questions = [
       "project",
       "demand",
       "program",
-      "portfolio"
     ],
     "multipleChoice": true
   },
@@ -2114,7 +2113,8 @@ const questions = [
     ],
     "correctAnswers": [
       "Planned Cost",
-      "Allocated Cost"
+      "Allocated Cost",
+      "Actual Cost"
     ],
     "multipleChoice": true
   },
@@ -2360,7 +2360,9 @@ const questions = [
     ],
     "correctAnswers": [
       "Project workspace",
-      "Project status form"
+      "Project status form",
+      "Project record",
+      "Portfolio workbench"
     ],
     "multipleChoice": true
   },
