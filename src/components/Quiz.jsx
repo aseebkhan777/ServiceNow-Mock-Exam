@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import questionBank from "../data/spm"; // Default question bank
 import HRSD from "../data/hrsd"; // HRSD question bank
 import ITSM from "../data/itsm";
+import ITOM from "../data/itom";
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
 
