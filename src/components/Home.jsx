@@ -16,11 +16,7 @@ const Home = () => {
   return (
     <div className="text-center p-6 bg-white rounded shadow-md md:w-[550px] h-[70vh] gap-2  flex flex-col justify-center items-center">
       <div className="flex justify-center mb-4 w-full">
-        <img
-          src="https://companieslogo.com/img/orig/NOW-6d5a01eb.png?t=1720244493"
-          className="h-[150px] w-auto"
-          alt=""
-        />
+        <img src=".\..\logo-new.svg" className="h-[100px] w-auto" alt="" />
       </div>
       <h1 className="text-3xl font-semibold mb-2">
         Welcome to ServiceNow Mock Test
