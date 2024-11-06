@@ -214,7 +214,7 @@ const questions = [
     ],
     "correctAnswers": [
       "Determine overall project cost requirements",
-      "Establish resource requirements and track costs.",
+      "Establish resource requirements and track costs",
       "Track actual amount spent compared to an approved budget."
     ],
     "multipleChoice": true
@@ -705,7 +705,7 @@ const questions = [
     ],
     "correctAnswers": [
       "Requirements",
-      "Decisions,",
+      "Decisions.",
       "Stakeholders"
     ],
     "multipleChoice": true
