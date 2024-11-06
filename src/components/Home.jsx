@@ -14,7 +14,7 @@ const Home = () => {
   };
 
   return (
-    <div className="text-center p-6 bg-white rounded shadow-md md:w-[550px]  flex flex-col">
+    <div className="text-center p-6 bg-white rounded shadow-md md:w-[550px] h-[70vh] gap-2  flex flex-col justify-center items-center">
       <div className="flex justify-center mb-4 w-full">
         <img
           src="https://companieslogo.com/img/orig/NOW-6d5a01eb.png?t=1720244493"
@@ -25,7 +25,7 @@ const Home = () => {
       <h1 className="text-3xl font-semibold mb-2">
         Welcome to ServiceNow Mock Test
       </h1>
-      <span className="mb-4">
+      <span className="mb-4 text-lg">
         Test youself before you appear for the actual ServiceNow exam.
       </span>
       <div className="flex flex-col w-full justify-center items-center gap-2">
@@ -40,11 +40,12 @@ const Home = () => {
           <option value="HRSD">HRSD</option>
           <option value="questions">SPM</option>
           <option value="ITSM">ITSM</option>
+          <option value="ITOM">ITOM</option>
         </select>
       </div>
       <button
         onClick={startQuiz}
-        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        className="bg-blue-500 w-full text-white py-2 px-4 rounded hover:bg-blue-600"
       >
         Let's Go
       </button>

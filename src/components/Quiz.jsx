@@ -25,6 +25,9 @@ const Quiz = () => {
       case "ITSM":
         selectedQuestions = ITSM;
         break;
+      case "ITOM":
+        selectedQuestions = ITOM;
+        break;
       default:
         selectedQuestions = questionBank;
     } // Determine question bank based on selected exam
@@ -109,7 +112,7 @@ const Quiz = () => {
   }
 
   return (
-    <div className="p-6 bg-white rounded shadow-md max-w-3xl h-[60vh] flex flex-col justify-center w-full mx-auto text-center">
+    <div className="p-6 bg-white rounded shadow-md max-w-3xl h-[100vh] sm:h-[80vh] flex flex-col justify-center w-full mx-auto text-center">
       <div className="text-xl font-semibold mb-4">
         Time Left: {formatTime(timeLeft)}
       </div>
