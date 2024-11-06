@@ -779,7 +779,8 @@ const questions = [
     ],
     "correctAnswers": [
       "Story",
-      "Epic"
+      "Epic",
+      "Project"
     ],
     "multipleChoice": true
   },
@@ -879,9 +880,10 @@ const questions = [
       "it_pps_admin"
     ],
     "correctAnswers": [
-      "admin"
+      "admin",
+      "it_pps_admin"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 62,
