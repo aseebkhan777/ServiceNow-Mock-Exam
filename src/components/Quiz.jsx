@@ -32,7 +32,7 @@ const Quiz = () => {
       default:
         selectedQuestions = questionBank;
     } // Determine question bank based on selected exam
-    const initialQuestions = getRandomQuestions(selectedQuestions, 100).map(
+    const initialQuestions = getRandomQuestions(selectedQuestions, 60).map(
       (q) => ({
         ...q,
         options: shuffleArray(q.options),
