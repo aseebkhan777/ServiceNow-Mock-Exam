@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
 function Login() {
   const navigate = useNavigate();
 
+  // // Hardcoded credentials from config
   const hardcodedUsername = "servicenow";
   const hardcodedPassword = "enablenow@123";
-
+  // State to store username, password, and password visibility
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
-  const checkCredentials = (e) => {
-    e.preventDefault(); // Prevent page refresh on form submit
+  // Handle the login check
+  const checkCredentials = () => {
     if (username === hardcodedUsername && password === hardcodedPassword) {
+      // If credentials are correct, navigate to the Home page
       navigate("/home");
     } else {
+      // If credentials are incorrect, show an alert
       alert("Invalid username or password!");
     }
   };
@@ -35,14 +37,14 @@ function Login() {
           Login before you start
         </h1>
       </div>
-      <form onSubmit={checkCredentials} className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6">
         <div className="w-full">
           <input
             className="w-full border-2 border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-green-500"
             type="text"
             placeholder="Username"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)} // Update username state
           />
         </div>
         <div className="relative">
@@ -51,11 +53,11 @@ function Login() {
             type={isPasswordVisible ? "text" : "password"}
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)} // Update password state
           />
           <div
             className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer"
-            onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+            onClick={() => setIsPasswordVisible(!isPasswordVisible)} // Toggle visibility
           >
             {isPasswordVisible ? (
               <FaEyeSlash size={20} className="text-gray-400" />
@@ -64,13 +66,16 @@ function Login() {
             )}
           </div>
         </div>
-        <button
-          type="submit"
-          className="w-full py-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
-        >
-          Login
-        </button>
-      </form>
+        <div className="flex flex-col gap-4">
+          <button
+            onClick={checkCredentials} // Call checkCredentials on click
+            className="w-full py-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
+          >
+            Login
+          </button>
+          
+        </div>
+      </div>
     </div>
   );
 }
