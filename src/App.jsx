@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
 import Login from "./components/login";
+import Certificate from "./components/certificate";
 const App = () => {
   return (
     <Router>
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/result" element={<Result />} />
+          <Route path="/certificate" element={<Certificate />} />
         </Routes>
       </div>
     </Router>

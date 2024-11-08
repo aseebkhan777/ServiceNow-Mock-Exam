@@ -9,12 +9,6 @@ const Result = () => {
 
   return (
     <div className="text-center p-6 bg-white rounded shadow-md max-w-2xl w-full mx-auto">
-      <button
-        onClick={() => navigate("/")}
-        className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-      >
-        Back to Home
-      </button>
       <h2
         className={`text-2xl font-semibold ${
           isPassed ? "text-green-500" : "text-red-500"
@@ -47,12 +41,20 @@ const Result = () => {
           </div>
         )
       )}
-      <button
-        onClick={() => navigate("/")}
-        className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-      >
-        Back to Home
-      </button>
+      <div className="flex gap-2 w-full mt-4" >
+        <button
+          onClick={() => navigate("/")}
+          className="w-[100%] bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
+          Back to Home
+        </button>
+        {/* <button
+          onClick={() => navigate("/certificate" )} // Call checkCredentials on click
+          className="w-[50%] px-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
+        >
+          Certificate
+        </button> */}
+      </div>
     </div>
   );
 };

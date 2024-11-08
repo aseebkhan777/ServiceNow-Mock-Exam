@@ -583,7 +583,7 @@ const ITOM = [
       "To discover file paths to recognize the signature of installed software",
     ],
     correctAnswers: [
-      "To discover the contents of flat files such as configuration files",
+      "To discover file paths to recognize the signature of installed software",
     ],
     multipleChoice: false,
   },
@@ -648,7 +648,7 @@ const ITOM = [
       "Product owner",
       "Model Categories",
     ],
-    correctAnswers: ["Manufacturer", "Configuration Items", "Model Categories"],
+    correctAnswers: ["Assets", "Configuration Items", "Model Categories"],
     multipleChoice: true,
   },
   {
@@ -922,7 +922,7 @@ const ITOM = [
     id: 79,
     text: "Which of the following choices may be global variables for steps in horizontal discovery patterns? (Choose two.)",
     options: ["A. system", "B. computer_system", "C. process", "D. baseline"],
-    correctAnswers: ["B. computer_system", "D. baseline"],
+    correctAnswers: ["B. computer_system", "C. process"],
     multipleChoice: true,
   },
   {
@@ -1246,7 +1246,7 @@ const ITOM = [
       "D. Infrastructure Patterns",
       "E. Policies",
     ],
-    correctAnswers: ["E. Policies"],
+    correctAnswers: ["C. Check"],
     multipleChoice: false,
   },
   {

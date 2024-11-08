@@ -4,14 +4,13 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 function Login() {
   const navigate = useNavigate();
 
+  // // Hardcoded credentials from config
+  const hardcodedUsername = "servicenow";
+  const hardcodedPassword = "enablenow@123";
   // State to store username, password, and password visibility
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  
-  // // Hardcoded credentials from config
-  const hardcodedUsername = "servicenow";
-  const hardcodedPassword = "enablenow@123";
 
   // Handle the login check
   const checkCredentials = () => {
@@ -67,13 +66,14 @@ function Login() {
             )}
           </div>
         </div>
-        <div>
+        <div className="flex flex-col gap-4">
           <button
             onClick={checkCredentials} // Call checkCredentials on click
             className="w-full py-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
           >
             Login
           </button>
+          
         </div>
       </div>
     </div>
