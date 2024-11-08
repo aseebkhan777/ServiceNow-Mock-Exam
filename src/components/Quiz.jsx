@@ -34,7 +34,7 @@ const Quiz = () => {
     }
 
     // Filter and map through questions to ensure required properties exist
-    const initialQuestions = getRandomQuestions(selectedQuestions, 100)
+    const initialQuestions = getRandomQuestions(selectedQuestions, 60)
       .filter((q) => q && q.text && q.options && q.correctAnswers) // Filter for required properties
       .map((q) => ({
         ...q,
