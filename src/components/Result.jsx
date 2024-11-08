@@ -48,12 +48,12 @@ const Result = () => {
         >
           Back to Home
         </button>
-        {/* <button
+        <button
           onClick={() => navigate("/certificate" )} // Call checkCredentials on click
           className="w-[50%] px-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
         >
           Certificate
-        </button> */}
+        </button>
       </div>
     </div>
   );

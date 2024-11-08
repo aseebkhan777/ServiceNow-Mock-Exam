@@ -29,6 +29,7 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
 
   return (
     <>
+    <div className="flex flex-col gap-2">
       <div
         ref={certificateRef}
         className="bg-[#032d42] p-6 grid grid-cols-5 w-[70vw] h-[80vh] gap-4"
@@ -45,7 +46,7 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
             <br />
             <span>Issued on <span className="font-bold underline">{issuedOn}</span></span>
           </div>
-          <div className="w-full flex flex-col items-end justify-end pe-6">
+          <div className="w-full flex flex-col items-end justify-end pe-3">
             <div className="w-[250px] flex flex-col justify-center">
               <img
                 src="/public/signature.png"
@@ -53,9 +54,9 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
                 className="w-full h-auto"
               />
               <hr className="border-2 border-gray-600 w-full" />
-              <h1 className="font-bold">Shayan Beigh</h1>
-              <h1>
-                <span className="font-bold">ICC Member,</span> EnableNow
+              <h1 className="font-extrabold">Shayan Beigh</h1>
+              <h1 className="font-bold">
+                <span className="font-extrabold">ICC Member,</span> EnableNow
                 Technology Solutions Pvt. Ltd.
               </h1>
             </div>
@@ -63,7 +64,7 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
         </div>
         <div className="col-span-1 text-white flex flex-col">
           <div className="flex-1 text-3xl font-extrabold tracking-wider">
-            EnableN<span className="text-green-400">o</span>w
+            enablen<span className="text-green-400">o</span>w
           </div>
           <div className="flex flex-col gap-0 uppercase tracking-wider">
             <span className="text-xl font-extrabold text-green-400">The</span>
@@ -76,13 +77,14 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-start mt-4">
         <button
           onClick={downloadPDF}
-          className="bg-blue-600 text-white px-4 py-2 rounded-md"
+          className="bg-[#032d42] text-white px-4 py-2 rounded-md"
         >
           Download as PDF
         </button>
+      </div>
       </div>
     </>
   );
