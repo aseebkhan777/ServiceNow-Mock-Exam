@@ -35,7 +35,7 @@ const Quiz = () => {
     const initialQuestions = getRandomQuestions(selectedQuestions, 100).map(
       (q) => ({
         ...q,
-        options: shuffleArray(q.options),
+        options: shuffleArray(q.options || []), // Ensure options is an array
       })
     );
     setQuestions(initialQuestions);
