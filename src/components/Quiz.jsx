@@ -31,13 +31,18 @@ const Quiz = () => {
         break;
       default:
         selectedQuestions = questionBank;
-    } // Determine question bank based on selected exam
-    const initialQuestions = getRandomQuestions(selectedQuestions, 100).map(
-      (q) => ({
+    }
+
+    // Filter and map through questions to ensure required properties exist
+    const initialQuestions = getRandomQuestions(selectedQuestions, 100)
+      .filter((q) => q && q.text && q.options && q.correctAnswers) // Filter for required properties
+      .map((q) => ({
         ...q,
+        text: q.text || "Untitled Question", // Fallback title for missing text
         options: shuffleArray(q.options || []), // Ensure options is an array
-      })
-    );
+        correctAnswers: q.correctAnswers || [], // Fallback for correctAnswers
+      }));
+      
     setQuestions(initialQuestions);
   }, [state.examType]); // Add dependency on examType
 
