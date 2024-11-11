@@ -65,7 +65,7 @@ function Certificate() {
           <div className="w-full flex flex-col items-end justify-end pe-3">
             <div className="w-[250px] flex flex-col justify-center">
               <img
-                src="/public/signature.png"
+                src="public\signature.png"
                 alt="signature"
                 className="w-full h-auto"
               />
