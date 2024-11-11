@@ -32,7 +32,7 @@ const Quiz = () => {
         selectedQuestions = SPM;
     }
 
-    const initialQuestions = getRandomQuestions(selectedQuestions, 2)
+    const initialQuestions = getRandomQuestions(selectedQuestions, 100)
       .filter((q) => q && q.text && q.options && q.correctAnswers)
       .map((q) => ({
         ...q,
