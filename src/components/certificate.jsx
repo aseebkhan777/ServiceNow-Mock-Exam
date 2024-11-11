@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import signature from "../../public/signature.png";
 function Certificate() {
   const certificateRef = useRef(null);
   const person = window.sessionStorage.getItem("per") || "User";
@@ -39,8 +39,6 @@ function Certificate() {
     });
   };
 
-
-
   return (
     <div className="flex flex-col gap-2">
       <div
@@ -58,17 +56,12 @@ function Certificate() {
             </span>
             <br />
             <span>
-              Issued on{" "}
-              <span className="font-bold underline">{CertDate}</span>
+              Issued on <span className="font-bold underline">{CertDate}</span>
             </span>
           </div>
           <div className="w-full flex flex-col items-end justify-end pe-3">
             <div className="w-[250px] flex flex-col justify-center">
-              <img
-                src="public\signature.png"
-                alt="signature"
-                className="w-full h-auto"
-              />
+              <img src={signature} alt="signature" className="w-full h-auto" />
               <hr className="border-2 border-gray-600 w-full" />
               <h1 className="font-extrabold">Shayan Beigh</h1>
               <h1 className="font-bold">
@@ -84,15 +77,9 @@ function Certificate() {
           </div>
           <div className="flex flex-col gap-0 uppercase tracking-wider">
             <span className="text-xl font-extrabold text-green-400">The</span>
-            <span className="text-xl font-extrabold text-green-400">
-              World
-            </span>
-            <span className="text-xl font-extrabold text-green-400">
-              Works
-            </span>
-            <span className="text-xl font-extrabold text-green-400">
-              With
-            </span>
+            <span className="text-xl font-extrabold text-green-400">World</span>
+            <span className="text-xl font-extrabold text-green-400">Works</span>
+            <span className="text-xl font-extrabold text-green-400">With</span>
             <span className="text-xl font-extrabold text-green-400">
               enable<span className="text-white">now</span>
             </span>

@@ -1672,7 +1672,7 @@ const HRSD = [
       "Using the maximum file upload size in megabytes field in the Employee Document Properties",
       "Using the maximum file upload size business rule",
     ],
-    correctAnswers: ["Using the file upload size system property"],
+    correctAnswers: ["Using the maximum file upload size in megabytes field in the Employee Document Properties"],
     multipleChoice: false,
   },
   [
