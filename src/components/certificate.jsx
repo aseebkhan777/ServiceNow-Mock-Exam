@@ -1,12 +1,14 @@
 import React, { useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Certificate() {
   const certificateRef = useRef(null);
   const person = window.sessionStorage.getItem("per") || "User";
   const cert = window.sessionStorage.getItem("cert") || "Certification";
   const CertDate = window.sessionStorage.getItem("issued") || "00-00-0000";
+  const navigate = useNavigate();
 
   // Function to download the certificate as PDF
   const downloadPDF = () => {
@@ -97,12 +99,18 @@ function Certificate() {
           </div>
         </div>
       </div>
-      <div className="flex justify-start mt-4">
+      <div className="flex justify-start gap-2 mt-4">
         <button
           onClick={downloadPDF}
           className="bg-[#032d42] text-white px-4 py-2 rounded-md"
         >
           Download as PDF
+        </button>
+        <button
+          onClick={() => navigate("/home")}
+          className="flex justify-center bg-[#032d42] text-white py-2 px-4 rounded "
+        >
+          Back to Home
         </button>
       </div>
     </div>
