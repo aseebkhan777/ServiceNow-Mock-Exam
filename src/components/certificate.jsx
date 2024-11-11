@@ -108,7 +108,7 @@ function Certificate() {
         </button>
         <button
           onClick={() => navigate("/home")}
-          className="flex justify-center bg-[#032d42] text-white py-2 px-4 rounded "
+          className="flex justify-center bg-[#032d42] text-white px-4 py-2 rounded-md "
         >
           Back to Home
         </button>

@@ -1429,7 +1429,7 @@ const HRSD = [
       "The Lifecycle Event will be canceled",
       "The activity will be triggered and must be completed manually",
     ],
-    correctAnswers: ["The activity will be skipped"],
+    correctAnswers: ["The activity will be triggered and must be completed manually"],
     multipleChoice: false,
   },
   {
