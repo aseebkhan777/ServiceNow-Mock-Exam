@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import SPM from "../data/spm"; // Default question bank
-import HRSD from "../data/hrsd"; // HRSD question bank
+import SPM from "../data/spm";
+import HRSD from "../data/hrsd";
 import ITSM from "../data/itsm";
 import ITOM from "../data/itom";
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
 
 const Quiz = () => {
-  const { state } = useLocation(); // Get state passed from Home
+  const { state } = useLocation();
   const navigate = useNavigate();
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(60 * 60); // 60 minutes in seconds
-  const [isSubmitted, setIsSubmitted] = useState(false); // To prevent multiple submissions
+  const [timeLeft, setTimeLeft] = useState(60 * 60);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Load and shuffle questions based on the selected exam type
   useEffect(() => {
     let selectedQuestions;
     switch (state.examType) {
@@ -33,23 +32,21 @@ const Quiz = () => {
         selectedQuestions = SPM;
     }
 
-    // Filter and map through questions to ensure required properties exist
     const initialQuestions = getRandomQuestions(selectedQuestions, 100)
-      .filter((q) => q && q.text && q.options && q.correctAnswers) // Filter for required properties
+      .filter((q) => q && q.text && q.options && q.correctAnswers)
       .map((q) => ({
         ...q,
-        text: q.text || "Untitled Question", // Fallback title for missing text
-        options: shuffleArray(q.options || []), // Ensure options is an array
-        correctAnswers: q.correctAnswers || [], // Fallback for correctAnswers
+        text: q.text || "Untitled Question",
+        options: shuffleArray(q.options || []),
+        correctAnswers: q.correctAnswers || [],
       }));
       
     setQuestions(initialQuestions);
-  }, [state.examType]); // Add dependency on examType
+  }, [state.examType]);
 
-  // Timer countdown logic
   useEffect(() => {
     if (timeLeft <= 0 && !isSubmitted) {
-      handleSubmit(); // Auto-submit when time runs out
+      handleSubmit();
     }
     const timer = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
     return () => clearInterval(timer);
@@ -72,14 +69,13 @@ const Quiz = () => {
   };
 
   const handleSubmit = () => {
-    setIsSubmitted(true); // Prevents re-submission
+    setIsSubmitted(true);
     let score = 0;
 
     const results = questions.map((q) => {
       const userAnswer = answers[q.id];
       let isCorrect = false;
 
-      // Check for multiple-choice questions
       if (q.multipleChoice) {
         if (Array.isArray(userAnswer)) {
           isCorrect =
@@ -87,7 +83,6 @@ const Quiz = () => {
             userAnswer.length === q.correctAnswers.length;
         }
       } else {
-        // For single-choice questions
         isCorrect = userAnswer === q.correctAnswers[0];
       }
 
@@ -112,7 +107,6 @@ const Quiz = () => {
     return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
   };
 
-  // Display loading message until questions are set
   if (questions.length === 0) {
     return <div>Loading...</div>;
   }
@@ -126,6 +120,7 @@ const Quiz = () => {
         question={questions[currentQuestionIndex]}
         selectedOption={answers[questions[currentQuestionIndex].id]}
         onSelectOption={handleOptionSelect}
+        index={currentQuestionIndex} // Pass the current question index here
       />
       <div className="flex justify-between mt-4">
         <button
