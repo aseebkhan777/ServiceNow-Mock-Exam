@@ -41,19 +41,21 @@ const Result = () => {
           </div>
         )
       )}
-      <div className="flex gap-2 w-full mt-4" >
+      <div className="flex gap-2 w-full mt-4">
         <button
-          onClick={() => navigate("/")}
-          className="w-[100%] bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          onClick={() => navigate("/home")}
+          className="flex-1 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
         >
           Back to Home
         </button>
-        {/* <button
-          onClick={() => navigate("/certificate" )} // Call checkCredentials on click
-          className="w-[50%] px-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
-        >
-          Certificate
-        </button> */}
+        {isPassed && (
+          <button
+            onClick={() => navigate("/certificate")}
+            className="flex-1 px-3 text-lg bg-blue-500 hover:bg-blue-600 rounded-md text-white"
+          >
+            Certificate
+          </button>
+        )}
       </div>
     </div>
   );

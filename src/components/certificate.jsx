@@ -1,34 +1,45 @@
 import React, { useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { useLocation, useNavigate } from "react-router-dom";
 
-function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
+function Certificate() {
   const certificateRef = useRef(null);
-  const { state } = useLocation(); // Get state passed from Home
+  const person = window.sessionStorage.getItem("per") || "User";
+  const cert = window.sessionStorage.getItem("cert") || "Certification";
+  const CertDate = window.sessionStorage.getItem("issued") || "00-00-0000";
 
   // Function to download the certificate as PDF
   const downloadPDF = () => {
     const certificate = certificateRef.current;
-    html2canvas(certificate).then((canvas) => {
+    html2canvas(certificate, {
+      scale: 2, // Higher scale for better quality
+    }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF("landscape", "pt", "a4");
+
+      // Get PDF dimensions and maintain aspect ratio
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
+      const aspectRatio = canvas.width / canvas.height;
 
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      // Calculate dimensions to fit image on PDF without stretching
+      let imgWidth, imgHeight;
+      if (aspectRatio > pdfWidth / pdfHeight) {
+        imgWidth = pdfWidth;
+        imgHeight = pdfWidth / aspectRatio;
+      } else {
+        imgHeight = pdfHeight;
+        imgWidth = pdfHeight * aspectRatio;
+      }
+
+      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
       pdf.save("certificate.pdf");
     });
   };
 
-  let dateTime = new Date();
-  let day = dateTime.getDay();
-  let month = dateTime.getMonth();
-  let year = dateTime.getFullYear();
-  let issuedOn = `${day}-${month + 1}-${year}`; // Adding 1 to month to display correctly
+
 
   return (
-    <>
     <div className="flex flex-col gap-2">
       <div
         ref={certificateRef}
@@ -36,15 +47,18 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
       >
         <div className="bg-white col-span-4 p-4 rounded-md flex flex-col gap-10 py-10 px-10">
           <div>
-            <h1 className="font-bold text-5xl">{name}</h1>
+            <h1 className="font-bold text-5xl">{person}</h1>
           </div>
           <div className="flex-1 flex justify-center flex-col">
             Successfully completed certification requirement for <br />
             <span className="font-bold">
-              Eligibility Certification for ServiceNow-{certName}
+              Eligibility Certification for ServiceNow-{cert}
             </span>
             <br />
-            <span>Issued on <span className="font-bold underline">{issuedOn}</span></span>
+            <span>
+              Issued on{" "}
+              <span className="font-bold underline">{CertDate}</span>
+            </span>
           </div>
           <div className="w-full flex flex-col items-end justify-end pe-3">
             <div className="w-[250px] flex flex-col justify-center">
@@ -68,9 +82,15 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
           </div>
           <div className="flex flex-col gap-0 uppercase tracking-wider">
             <span className="text-xl font-extrabold text-green-400">The</span>
-            <span className="text-xl font-extrabold text-green-400">World</span>
-            <span className="text-xl font-extrabold text-green-400">Works</span>
-            <span className="text-xl font-extrabold text-green-400">With</span>
+            <span className="text-xl font-extrabold text-green-400">
+              World
+            </span>
+            <span className="text-xl font-extrabold text-green-400">
+              Works
+            </span>
+            <span className="text-xl font-extrabold text-green-400">
+              With
+            </span>
             <span className="text-xl font-extrabold text-green-400">
               enable<span className="text-white">now</span>
             </span>
@@ -85,8 +105,7 @@ function Certificate({ name="Irfan Ahmad Wani",certName="HRSD" }) {
           Download as PDF
         </button>
       </div>
-      </div>
-    </>
+    </div>
   );
 }
 

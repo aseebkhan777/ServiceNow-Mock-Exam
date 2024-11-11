@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import{ useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
-  const navigate = useNavigate();
-
+const navigate = useNavigate()
   const hardcodedUsername = "servicenow";
   const hardcodedPassword = "enablenow@123";
 

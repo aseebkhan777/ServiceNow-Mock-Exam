@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import questionBank from "../data/spm"; // Default question bank
+import SPM from "../data/spm"; // Default question bank
 import HRSD from "../data/hrsd"; // HRSD question bank
 import ITSM from "../data/itsm";
 import ITOM from "../data/itom";
@@ -30,11 +30,11 @@ const Quiz = () => {
         selectedQuestions = ITOM;
         break;
       default:
-        selectedQuestions = questionBank;
+        selectedQuestions = SPM;
     }
 
     // Filter and map through questions to ensure required properties exist
-    const initialQuestions = getRandomQuestions(selectedQuestions, 60)
+    const initialQuestions = getRandomQuestions(selectedQuestions, 100)
       .filter((q) => q && q.text && q.options && q.correctAnswers) // Filter for required properties
       .map((q) => ({
         ...q,
