@@ -1,9 +1,9 @@
-import{ useState } from "react";
+import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
-const navigate = useNavigate()
+  const navigate = useNavigate();
   const hardcodedUsername = "servicenow";
   const hardcodedPassword = "enablenow@123";
 
@@ -21,7 +21,7 @@ const navigate = useNavigate()
   };
 
   return (
-    <div className="p-6 rounded-md shadow-lg bg-white w-[400px] h-fit flex flex-col gap-4">
+    <div className="p-6 rounded-md shadow-lg bg-gray-100 backdrop:blur-md w-[400px] h-fit flex flex-col gap-4">
       <div className="flex justify-center items-center mb-6">
         <img
           src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png"

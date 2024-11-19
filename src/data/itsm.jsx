@@ -1182,7 +1182,7 @@ const ITSM = [
       "Change Interceptor",
       "Change Catalog",
     ],
-    correctAnswers: ["Change Interceptor"],
+    correctAnswers: ["Change Landing Page"],
     multipleChoice: false,
   },
   {
