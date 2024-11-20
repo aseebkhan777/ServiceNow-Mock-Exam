@@ -213,7 +213,7 @@ const HRSD = [
       "Human Resources: Core",
       "Human Resources: Integrations",
       "Human Resources: Lifecycle Events",
-      "Human Resources: Knowledge",
+      "Human Resources: Service Portal",
     ],
     multipleChoice: true,
   },
@@ -1429,7 +1429,9 @@ const HRSD = [
       "The Lifecycle Event will be canceled",
       "The activity will be triggered and must be completed manually",
     ],
-    correctAnswers: ["The activity will be triggered and must be completed manually"],
+    correctAnswers: [
+      "The activity will be triggered and must be completed manually",
+    ],
     multipleChoice: false,
   },
   {
@@ -1534,7 +1536,7 @@ const HRSD = [
     ],
     correctAnswers: [
       "Create task templates for their audience in a simple, user-friendly experience",
-      "Add owners and approvers to journey configurations",
+      "Manage the order and flow of the journey stages and tasks",
       "Change only the task templates that they own",
     ],
     multipleChoice: true,
@@ -1672,7 +1674,9 @@ const HRSD = [
       "Using the maximum file upload size in megabytes field in the Employee Document Properties",
       "Using the maximum file upload size business rule",
     ],
-    correctAnswers: ["Using the maximum file upload size in megabytes field in the Employee Document Properties"],
+    correctAnswers: [
+      "Using the maximum file upload size in megabytes field in the Employee Document Properties",
+    ],
     multipleChoice: false,
   },
   [
