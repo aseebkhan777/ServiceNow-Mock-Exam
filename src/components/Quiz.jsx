@@ -4,6 +4,7 @@ import SPM from "../data/spm";
 import HRSD from "../data/hrsd";
 import ITSM from "../data/itsm";
 import ITOM from "../data/itom";
+import CSA from "../data/csa"
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
 
@@ -28,11 +29,14 @@ const Quiz = () => {
       case "ITOM":
         selectedQuestions = ITOM;
         break;
+      case "CSA":
+        selectedQuestions = CSA;
+        break;
       default:
         selectedQuestions = SPM;
     }
 
-    const initialQuestions = getRandomQuestions(selectedQuestions, 200)
+    const initialQuestions = getRandomQuestions(selectedQuestions, 5)
       .filter((q) => q && q.text && q.options && q.correctAnswers)
       .map((q) => ({
         ...q,

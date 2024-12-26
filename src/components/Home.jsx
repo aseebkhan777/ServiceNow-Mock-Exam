@@ -63,6 +63,7 @@ const Home = () => {
           <option value="SPM">SPM</option>
           <option value="ITSM">ITSM</option>
           <option value="ITOM">ITOM</option>
+          <option value="CSA">CSA</option>
         </select>
       </div>
       <button
