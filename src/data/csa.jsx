@@ -1,45 +1,45 @@
 const CSA = [
 
-  { "id": 1, "text": "A Service Catalog may include which of the following components?", "options": ["Order Guides, Exchange Rates, Calendars", "Order Guides, Catalog Items, and Interceptors", "Catalog Items, Asset Contracts, Task Surveys", "Record Producers, Order Guides, and Catalog Items Most Voted"], "correctAnswers": ["D"], "multipleChoice": false },
-  { "id": 2, "text": "Which one of the following statements applies to a set of fields when they are coalesced during an import?", "options": ["If a match is found using the coalesce fields, the existing record is updated with the information being imported Most Voted", "If a match is not found using the coalesce fields, the system does not create a Transform Map", "If a match is found using the coalesce fields, the system creates a new record", "If a match is not found using the coalesce fields, the existing record is updated with the information being imported"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 3, "text": "As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?", "options": ["A metric is a report gauge used on homepages to display real-time data", "A metric is a time measurement used to report the effectiveness of workflows and SLAs", "A metric is used to measure and evaluate the effectiveness of IT service management processes Most Voted", "A metric is a comparative measurement used to report the effectiveness of flows and SLAs."], "correctAnswers": ["C"], "multipleChoice": false },
-  { "id": 4, "text": "The display sequence is controlled in a Service Catalog Item using which of the following?", "options": ["The Default Value field in the Catalog Item form", "The Sequence field in the Catalog Item form", "The Order field in the Variable form Most Voted", "The Choice field in the Variable form"], "correctAnswers": ["C"], "multipleChoice": false },
-  { "id": 5, "text": "Reports can be created from which different places in the platform? (Choose two.)", "options": ["List column heading Most Voted", "Metrics module", "Statistics module", "View / Run module Most Voted"], "correctAnswers": ["A", "D"], "multipleChoice": true },
-  { "id": 6, "text": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)", "options": ["Most recent update Most Voted", "Popularity", "Relevancy Most Voted", "Manager assignment", "Number of views Most Voted"], "correctAnswers": ["A", "C", "E"], "multipleChoice": true },
-  { "id": 7, "text": "What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?", "options": ["RITM (Number)>REQ (Number)>PROCUREMENT (Number)", "REQ (Number)>RITM (Number)>PROCUREMENT (Number)", "REQ (Number)>RITM (Number)>TASK (Number) Most Voted", "FULFILLMENT (Number)>RITM (Number)>TASK (Number)"], "correctAnswers": ["C"], "multipleChoice": false },
-  { "id": 8, "text": "Which term refers to application menus and modules which you may want to access quickly and often?", "options": ["Breadcrumb", "Favorite Most Voted", "Tag", "Bookmark"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 9, "text": "What is generated from the Service Catalog once a user places an order for an item or service?", "options": ["A change request", "An Order Guide", "A request Most Voted", "An SLA"], "correctAnswers": ["C"], "multipleChoice": false },
-  { "id": 10, "text": "From the User menu, which actions can a user select? (Choose three.)", "options": ["Send Notifications", "Log Out ServiceNow Most Voted", "Elevate Roles Most Voted", "Impersonate Users Most Voted", "Order from Service Catalog", "Approve Records"], "correctAnswers": ["B", "C", "D"], "multipleChoice": true },
-  { "id": 11, "text": "Buttons, form links, and context menu items are all examples of what type of functionality?", "options": ["Business Rule", "UI Action Most Voted", "Client Script", "UI Policy"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 12, "text": "Which of the following is true of Service Catalog Items in relation to the Service Catalog?", "options": ["They run behind the scenes.", "They are the building blocks. Most Voted", "They are optional.", "They provide options."], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 13, "text": "Table Access Control rules are processed in the following order:", "options": ["any table name (wildcard), parent table name, table name", "table name, parent table name, any table name (wildcard) Most Voted", "parent table name, table name, any table name (wildcard)", "any table name (wildcard), table name, parent table name"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 14, "text": "What is the platform name for the User table?", "options": ["u_users", "sys_users", "x_users", "sys_user Most Voted"], "correctAnswers": ["D"], "multipleChoice": false },
-  { "id": 15, "text": "A REQ number in the Service Catalog represents", "options": ["the order number. Most Voted", "the stage.", "the task to complete.", "the individual item in the order."], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 16, "text": "Which would NOT appear in the History section of the Application Navigator?", "options": ["Records", "UI Pages Most Voted", "Lists", "Forms"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 17, "text": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?", "options": ["Avoid using the Default Update set as an Update Set for moving customizations from instance to instance Most Voted", "Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions", "Use the Baseline Update Set to store the contents of items after they are changed the first time", "Once an Update Set is closed as ‘Complete’, change it back to ‘In Progress’ until it is applied to another instance"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 18, "text": "Which of the following is used to initiate a flow?", "options": ["A Trigger Most Voted", "Core Action", "A spoke", "An Event"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 19, "text": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?", "options": ["Service Catalog variables can only be used in Record Producers", "Service Catalog variables can only be used in Order Guides", "Service Catalog variables cannot affect the order price", "Service Catalog variables are global by default Most Voted"], "correctAnswers": ["D"], "multipleChoice": false },
-  { "id": 20, "text": "Which one of the following statements is true about Column Context Menus?", "options": ["It displays actions such as creating quick reports, configuring the list, and exporting data Most Voted", "It displays actions related to filtering options, assigning tags, and search", "It displays actions related to viewing and filtering the entire list", "It displays actions such as view form, view related task, and add relationship"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 21, "text": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)", "options": ["Discovery Most Voted", "IntegrationHub ETL Most Voted", "Finder", "CMDB Plug-in", "CMDB Integration Dashboard"], "correctAnswers": ["A", "B"], "multipleChoice": true },
-  { "id": 22, "text": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?", "options": ["Mapping fields using the Import Log", "Mapping fields using Transform History", "Mapping fields using an SLA", "Mapping fields using a Field Map Most Voted"], "correctAnswers": ["D"], "multipleChoice": false },
-  { "id": 23, "text": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?", "options": ["The CMDB contains data about tangible and intangible business assets Most Voted", "The CMDB contains the Business Rules that direct the intangible, configurable assets used by a company", "The CMDB archives all Service Management PaaS equipment metadata and usage statistics", "The CMDB contains ITIL process data pertaining to configuration items"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 24, "text": "In what order should filter elements be specified?", "options": ["Field, Operator, then Value Most Voted", "Field, Operator, then Condition", "Operator, Condition, then Value", "Value, Operator, then Field"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 25, "text": "Which statement is true about business rules?", "options": ["A business rule must run before a database action occurs", "A business rule can be a piece of Javascript Most Voted", "A business rule must not run before a database action occurs", "A business rule monitors fields on a form"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 26, "text": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)", "options": ["onSubmit Most Voted", "onUpdate", "onCellEdit Most Voted", "onLoad Most Voted", "onEdit", "onChange Most Voted", "onSave"], "correctAnswers": ["A", "C", "D", "F"], "multipleChoice": true },
-  { "id": 27, "text": "Which type of tables may be extended by other tables, but do not extend another table?", "options": ["Base Tables Most Voted", "Core Tables", "Extended Tables", "Custom Tables"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 28, "text": "Which of the following statement describes the purpose of an Order Guide?", "options": ["Order Guides restrict the number of items in an order to only one item per request", "Order Guide provide a list of guidelines for Administrators on how to set up item variables", "Order Guide provide the ability to order multiple, related items as one request Most Voted", "Order Guides take the user directly to the checkout without prompting for information"], "correctAnswers": ["C"], "multipleChoice": false },
-  { "id": 29, "text": "Which tool is used to have conversations with logged-in users in real-time?", "options": ["Connect Chat Most Voted", "Now Messenger", "User Presence", "Comments"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 30, "text": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)", "options": ["Service Processes Most Voted", "User Permissions", "Tables and Fields Most Voted", "A Database Most Voted", "The Dependency View Most Voted"], "correctAnswers": ["A", "C", "D", "E"], "multipleChoice": true },
-  { "id": 31, "text": "What is a formatter? Select one of the following.", "options": ["A formatter allows you to configure applications on your instance", "A formatter is a form element used to display information that is not a field in the record Most Voted", "A formatter allows you to populate fields automatically", "A formatter is a set of conditions applied to a table to help find and work with data"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 32, "text": "When searching using the App Navigator search field, what can be returned? (Choose four.)", "options": ["Names of Applications and Modules Most Voted", "Names of Modules Most Voted", "Names of Applications Most Voted", "Favorites Most Voted", "History Records", "Titles of Dashboard Gauges"], "correctAnswers": ["A", "B", "C", "D"], "multipleChoice": true },
-  { "id": 33, "text": "Which technique is used to get information from a series of referenced fields from different tables?", "options": ["Table-Walking", "Sys_ID Pulling", "Dot-Walking Most Voted", "Record-Hopping"], "correctAnswers": ["C"], "multipleChoice": false },
-  { "id": 34, "text": "What is a schema map?", "options": ["A schema map enables administrators to define records from specific tables as trouble sources for Configuration Items", "A schema map graphically organizes the visual task boards for the CMDB", "A schema map graphically displays the Configuration Items that support a business service", "A schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema Most Voted"], "correctAnswers": ["D"], "multipleChoice": false },
-  { "id": 35, "text": "Which one of the following statements best describes the purpose of an Update Set?", "options": ["An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems Most Voted", "By default, an Update Set includes customizations, Business Rules, and homepages", "An Update Set is a group of customizations that is moved from Production to Development", "By default, the changes included in an Update Set are visible only in the instance to which they are applied"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 36, "text": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)", "options": ["Banner Image Most Voted", "Record Number Format", "Browser Tab Title Most Voted", "System Date Format Most Voted", "Form Header Size"], "correctAnswers": ["A", "C", "D"], "multipleChoice": true },
-  { "id": 37, "text": "Which of the following statements is true regarding import sets?", "options": ["An import set can be used to move data between ServiceNow instances Most Voted", "An import set can only be used to import data into ServiceNow from external systems", "An import set can be used to create records from data that exists within the same instance", "An import set can only be used to import data into ServiceNow from external systems"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 38, "text": "What is a catalog client script?", "options": ["A catalog client script controls the flow of data between the Service Catalog and other ServiceNow applications", "A catalog client script executes client-side logic related to Service Catalog item variables Most Voted", "A catalog client script is used for workflow management", "A catalog client script modifies the data from an order guide"], "correctAnswers": ["B"], "multipleChoice": false },
-  { "id": 39, "text": "Which feature allows users to personalize the interface by changing colors and themes?", "options": ["Theme Customization Most Voted", "User Preferences", "UI Theme Editor", "Color Palette Customization"], "correctAnswers": ["A"], "multipleChoice": false },
-  { "id": 40, "text": "Which of the following is a true statement about record producers?", "options": ["Record Producers allow users to create records in ServiceNow through the Service Catalog Most Voted", "Record Producers are always linked to a specific catalog item", "Record Producers only work with incidents", "Record Producers allow users to create records in the Incident form only"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 1, "text": "A Service Catalog may include which of the following components?", "options": ["Order Guides, Exchange Rates, Calendars", "Order Guides, Catalog Items, and Interceptors", "Catalog Items, Asset Contracts, Task Surveys", "Record Producers, Order Guides, and Catalog Items  "], "correctAnswers": ["D"], "multipleChoice": false },
+  { "id": 2, "text": "Which one of the following statements applies to a set of fields when they are coalesced during an import?", "options": ["If a match is found using the coalesce fields, the existing record is updated with the information being imported  ", "If a match is not found using the coalesce fields, the system does not create a Transform Map", "If a match is found using the coalesce fields, the system creates a new record", "If a match is not found using the coalesce fields, the existing record is updated with the information being imported"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 3, "text": "As it relates to ServiceNow reporting, which of the following statements describes what a metric can do?", "options": ["A metric is a report gauge used on homepages to display real-time data", "A metric is a time measurement used to report the effectiveness of workflows and SLAs", "A metric is used to measure and evaluate the effectiveness of IT service management processes  ", "A metric is a comparative measurement used to report the effectiveness of flows and SLAs."], "correctAnswers": ["C"], "multipleChoice": false },
+  { "id": 4, "text": "The display sequence is controlled in a Service Catalog Item using which of the following?", "options": ["The Default Value field in the Catalog Item form", "The Sequence field in the Catalog Item form", "The Order field in the Variable form  ", "The Choice field in the Variable form"], "correctAnswers": ["C"], "multipleChoice": false },
+  { "id": 5, "text": "Reports can be created from which different places in the platform? (Choose two.)", "options": ["List column heading  ", "Metrics module", "Statistics module", "View / Run module  "], "correctAnswers": ["A", "D"], "multipleChoice": true },
+  { "id": 6, "text": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)", "options": ["Most recent update  ", "Popularity", "Relevancy  ", "Manager assignment", "Number of views  "], "correctAnswers": ["A", "C", "E"], "multipleChoice": true },
+  { "id": 7, "text": "What is the path an Administrator could take to view the fulfillment stage task list for an order placed by a user?", "options": ["RITM (Number)>REQ (Number)>PROCUREMENT (Number)", "REQ (Number)>RITM (Number)>PROCUREMENT (Number)", "REQ (Number)>RITM (Number)>TASK (Number)  ", "FULFILLMENT (Number)>RITM (Number)>TASK (Number)"], "correctAnswers": ["C"], "multipleChoice": false },
+  { "id": 8, "text": "Which term refers to application menus and modules which you may want to access quickly and often?", "options": ["Breadcrumb", "Favorite  ", "Tag", "Bookmark"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 9, "text": "What is generated from the Service Catalog once a user places an order for an item or service?", "options": ["A change request", "An Order Guide", "A request  ", "An SLA"], "correctAnswers": ["C"], "multipleChoice": false },
+  { "id": 10, "text": "From the User menu, which actions can a user select? (Choose three.)", "options": ["Send Notifications", "Log Out ServiceNow  ", "Elevate Roles  ", "Impersonate Users  ", "Order from Service Catalog", "Approve Records"], "correctAnswers": ["B", "C", "D"], "multipleChoice": true },
+  { "id": 11, "text": "Buttons, form links, and context menu items are all examples of what type of functionality?", "options": ["Business Rule", "UI Action  ", "Client Script", "UI Policy"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 12, "text": "Which of the following is true of Service Catalog Items in relation to the Service Catalog?", "options": ["They run behind the scenes.", "They are the building blocks.  ", "They are optional.", "They provide options."], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 13, "text": "Table Access Control rules are processed in the following order:", "options": ["any table name (wildcard), parent table name, table name", "table name, parent table name, any table name (wildcard)  ", "parent table name, table name, any table name (wildcard)", "any table name (wildcard), table name, parent table name"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 14, "text": "What is the platform name for the User table?", "options": ["u_users", "sys_users", "x_users", "sys_user  "], "correctAnswers": ["D"], "multipleChoice": false },
+  { "id": 15, "text": "A REQ number in the Service Catalog represents", "options": ["the order number.  ", "the stage.", "the task to complete.", "the individual item in the order."], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 16, "text": "Which would NOT appear in the History section of the Application Navigator?", "options": ["Records", "UI Pages  ", "Lists", "Forms"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 17, "text": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?", "options": ["Avoid using the Default Update set as an Update Set for moving customizations from instance to instance  ", "Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions", "Use the Baseline Update Set to store the contents of items after they are changed the first time", "Once an Update Set is closed as ‘Complete’, change it back to ‘In Progress’ until it is applied to another instance"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 18, "text": "Which of the following is used to initiate a flow?", "options": ["A Trigger  ", "Core Action", "A spoke", "An Event"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 19, "text": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?", "options": ["Service Catalog variables can only be used in Record Producers", "Service Catalog variables can only be used in Order Guides", "Service Catalog variables cannot affect the order price", "Service Catalog variables are global by default  "], "correctAnswers": ["D"], "multipleChoice": false },
+  { "id": 20, "text": "Which one of the following statements is true about Column Context Menus?", "options": ["It displays actions such as creating quick reports, configuring the list, and exporting data  ", "It displays actions related to filtering options, assigning tags, and search", "It displays actions related to viewing and filtering the entire list", "It displays actions such as view form, view related task, and add relationship"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 21, "text": "Which ServiceNow products can be used to discover and populate the CMDB? (Choose two.)", "options": ["Discovery  ", "IntegrationHub ETL  ", "Finder", "CMDB Plug-in", "CMDB Integration Dashboard"], "correctAnswers": ["A", "B"], "multipleChoice": true },
+  { "id": 22, "text": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?", "options": ["Mapping fields using the Import Log", "Mapping fields using Transform History", "Mapping fields using an SLA", "Mapping fields using a Field Map  "], "correctAnswers": ["D"], "multipleChoice": false },
+  { "id": 23, "text": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?", "options": ["The CMDB contains data about tangible and intangible business assets  ", "The CMDB contains the Business Rules that direct the intangible, configurable assets used by a company", "The CMDB archives all Service Management PaaS equipment metadata and usage statistics", "The CMDB contains ITIL process data pertaining to configuration items"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 24, "text": "In what order should filter elements be specified?", "options": ["Field, Operator, then Value  ", "Field, Operator, then Condition", "Operator, Condition, then Value", "Value, Operator, then Field"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 25, "text": "Which statement is true about business rules?", "options": ["A business rule must run before a database action occurs", "A business rule can be a piece of Javascript  ", "A business rule must not run before a database action occurs", "A business rule monitors fields on a form"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 26, "text": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)", "options": ["onSubmit  ", "onUpdate", "onCellEdit  ", "onLoad  ", "onEdit", "onChange  ", "onSave"], "correctAnswers": ["A", "C", "D", "F"], "multipleChoice": true },
+  { "id": 27, "text": "Which type of tables may be extended by other tables, but do not extend another table?", "options": ["Base Tables  ", "Core Tables", "Extended Tables", "Custom Tables"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 28, "text": "Which of the following statement describes the purpose of an Order Guide?", "options": ["Order Guides restrict the number of items in an order to only one item per request", "Order Guide provide a list of guidelines for Administrators on how to set up item variables", "Order Guide provide the ability to order multiple, related items as one request  ", "Order Guides take the user directly to the checkout without prompting for information"], "correctAnswers": ["C"], "multipleChoice": false },
+  { "id": 29, "text": "Which tool is used to have conversations with logged-in users in real-time?", "options": ["Connect Chat  ", "Now Messenger", "User Presence", "Comments"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 30, "text": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)", "options": ["Service Processes  ", "User Permissions", "Tables and Fields  ", "A Database  ", "The Dependency View  "], "correctAnswers": ["A", "C", "D", "E"], "multipleChoice": true },
+  { "id": 31, "text": "What is a formatter? Select one of the following.", "options": ["A formatter allows you to configure applications on your instance", "A formatter is a form element used to display information that is not a field in the record  ", "A formatter allows you to populate fields automatically", "A formatter is a set of conditions applied to a table to help find and work with data"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 32, "text": "When searching using the App Navigator search field, what can be returned? (Choose four.)", "options": ["Names of Applications and Modules  ", "Names of Modules  ", "Names of Applications  ", "Favorites  ", "History Records", "Titles of Dashboard Gauges"], "correctAnswers": ["A", "B", "C", "D"], "multipleChoice": true },
+  { "id": 33, "text": "Which technique is used to get information from a series of referenced fields from different tables?", "options": ["Table-Walking", "Sys_ID Pulling", "Dot-Walking  ", "Record-Hopping"], "correctAnswers": ["C"], "multipleChoice": false },
+  { "id": 34, "text": "What is a schema map?", "options": ["A schema map enables administrators to define records from specific tables as trouble sources for Configuration Items", "A schema map graphically organizes the visual task boards for the CMDB", "A schema map graphically displays the Configuration Items that support a business service", "A schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema  "], "correctAnswers": ["D"], "multipleChoice": false },
+  { "id": 35, "text": "Which one of the following statements best describes the purpose of an Update Set?", "options": ["An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems  ", "By default, an Update Set includes customizations, Business Rules, and homepages", "An Update Set is a group of customizations that is moved from Production to Development", "By default, the changes included in an Update Set are visible only in the instance to which they are applied"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 36, "text": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)", "options": ["Banner Image  ", "Record Number Format", "Browser Tab Title  ", "System Date Format  ", "Form Header Size"], "correctAnswers": ["A", "C", "D"], "multipleChoice": true },
+  { "id": 37, "text": "Which of the following statements is true regarding import sets?", "options": ["An import set can be used to move data between ServiceNow instances  ", "An import set can only be used to import data into ServiceNow from external systems", "An import set can be used to create records from data that exists within the same instance", "An import set can only be used to import data into ServiceNow from external systems"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 38, "text": "What is a catalog client script?", "options": ["A catalog client script controls the flow of data between the Service Catalog and other ServiceNow applications", "A catalog client script executes client-side logic related to Service Catalog item variables  ", "A catalog client script is used for workflow management", "A catalog client script modifies the data from an order guide"], "correctAnswers": ["B"], "multipleChoice": false },
+  { "id": 39, "text": "Which feature allows users to personalize the interface by changing colors and themes?", "options": ["Theme Customization  ", "User Preferences", "UI Theme Editor", "Color Palette Customization"], "correctAnswers": ["A"], "multipleChoice": false },
+  { "id": 40, "text": "Which of the following is a true statement about record producers?", "options": ["Record Producers allow users to create records in ServiceNow through the Service Catalog  ", "Record Producers are always linked to a specific catalog item", "Record Producers only work with incidents", "Record Producers allow users to create records in the Incident form only"], "correctAnswers": ["A"], "multipleChoice": false },
   {
     "id": 41,
     "text": "What is a Dictionary Override?",
@@ -875,7 +875,7 @@ const CSA = [
     "id": 107,
     "text": "When moving multiple update sets at one time, what might you do to facilitate the move?",
     "options": [
-      "A. Batch Most Voted",
+      "A. Batch  ",
       "B. Verify",
       "C. Test",
       "D. Preview"
@@ -889,7 +889,7 @@ const CSA = [
     "options": [
       "A. Groups, Conditional Expressions and Workflows",
       "B. Table Schema, CRUD, and User Authentication",
-      "C. Object and Operation being secured; Permissions required to access the object Most Voted",
+      "C. Object and Operation being secured; Permissions required to access the object  ",
       "D. security_admin"
     ],
     "correctAnswers": ["C"],
@@ -901,7 +901,7 @@ const CSA = [
     "options": [
       "A. Star",
       "B. Clock",
-      "C. Application Most Voted",
+      "C. Application  ",
       "D. Funnel"
     ],
     "correctAnswers": ["C"],
@@ -913,7 +913,7 @@ const CSA = [
     "options": [
       "A. CSDM Items",
       "B. CMDB",
-      "C. Configuration item Most Voted",
+      "C. Configuration item  ",
       "D. Service Offerings",
       "E. Asset"
     ],
@@ -925,7 +925,7 @@ const CSA = [
     "text": "A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?",
     "options": [
       "A. Specify the Dept_Mgr role on the catalog content block",
-      "B. Add the Department Manager group to the catalog item's user criteria Most Voted",
+      "B. Add the Department Manager group to the catalog item's user criteria  ",
       "C. Add the Department Manager group to the catalog item's ACL",
       "D. Only publish the item in the HR service catalog",
       "E. Use a Dept_Mgr ACL on the HR service catalog"
@@ -937,7 +937,7 @@ const CSA = [
     "id": 112,
     "text": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions:\n✑ Incidents where the state is Closed\n✑ Incidents where Assignment Group is Network\nAfter clicking the Funnel icon, what should the user do?",
     "options": [
-      "A. Define the first condition; click AND button; define second condition; click Run Most Voted",
+      "A. Define the first condition; click AND button; define second condition; click Run  ",
       "B. Define the first condition; click AND button; define second condition; press enter",
       "C. Define the first condition; click OR button; define second condition; press enter",
       "D. Define the first condition; click > icon on breadcrumb, define second condition; click Run",
@@ -954,7 +954,7 @@ const CSA = [
       "B. incident=>major_incident",
       "C. incident<=>major_incident",
       "D. incident||major_incident",
-      "E. incident.major_incident Most Voted"
+      "E. incident.major_incident  "
     ],
     "correctAnswers": ["E"],
     "multipleChoice": false
@@ -964,7 +964,7 @@ const CSA = [
     "text": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group.\n✑ For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions.\n✑ For Facilities, the item will be used for anyone in the company who needs room set up services.\nHowever, both departments have their own service catalogs. What do you do, to support these requirements?",
     "options": [
       "A. Create one Catalog Item for HR Event Room Set Up and one for Facilities Event Room Set Up; then publish each to the appropriate Catalog.",
-      "B. Create one Catalog Item for Event Room Set Up; then publish to both Catalogs. Most Voted",
+      "B. Create one Catalog Item for Event Room Set Up; then publish to both Catalogs.  ",
       "C. Create one Catalog Item for Event Room Set Up; then publish to the Parent Catalog, which is accessible to both HR and Facilities.",
       "D. Create one Catalog Item for Event Room Set Up; then use ACLs to control access."
     ],
@@ -976,7 +976,7 @@ const CSA = [
     "text": "After finishing your work on High Security Settings, what do you do to return to normal admin security levels?",
     "options": [
       "A. Select Normal role",
-      "B. Log out and back in Most Voted",
+      "B. Log out and back in  ",
       "C. Use System Administration > Normal Security module",
       "D. Select Global Update Set",
       "E. End Impersonation"
@@ -988,7 +988,7 @@ const CSA = [
     "id": 116,
     "text": "What type of field allows you to look up values from one other table?",
     "options": [
-      "A. Reference Most Voted",
+      "A. Reference  ",
       "B. Verity",
       "C. Options",
       "D. Selections",
@@ -1002,7 +1002,7 @@ const CSA = [
     "id": 117,
     "text": "Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?",
     "options": [
-      "A. Process Automation > Flow Designer Most Voted",
+      "A. Process Automation > Flow Designer  ",
       "B. Process Automation > Flow Administration",
       "C. Process Automation > Workflow Editor",
       "D. Process Automation > Process Flow",
@@ -1019,7 +1019,7 @@ const CSA = [
       "B. Reports > Getting Started",
       "C. Performance Analytics > Reports",
       "D. Self-Service > Reports",
-      "E. Reports > Create New Most Voted"
+      "E. Reports > Create New  "
     ],
     "correctAnswers": ["E"],
     "multipleChoice": false
@@ -1028,7 +1028,7 @@ const CSA = [
     "id": 119,
     "text": "What are the steps for applying an update set to an instance?",
     "options": [
-      "A. Retrieve, Preview, Commit Most Voted",
+      "A. Retrieve, Preview, Commit  ",
       "B. Specify, Transform, Apply",
       "C. Retrieve, Assess, Apply",
       "D. Get, Test, Push",
@@ -1041,7 +1041,7 @@ const CSA = [
     "id": 120,
     "text": "When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?",
     "options": [
-      "A. Run Transform Most Voted",
+      "A. Run Transform  ",
       "B. Run Import",
       "C. Import Dataset",
       "D. Execute Transform",
@@ -1054,11 +1054,11 @@ const CSA = [
     "id": 121,
     "text": "What would you do, on a list, if you wanted to show the records in groups, based on the column category? (Choose two.)",
     "options": [
-      "A. On list Context Menu, select Group By > Category Most Voted",
+      "A. On list Context Menu, select Group By > Category  ",
       "B. On the Filter Menu, select Group By > Category",
       "C. Click Group On icon, select Category",
       "D. On Navigator Filter, type tablename.group.category and press enter",
-      "E. On the Category column title, click Context menu > Group By Category Most Voted"
+      "E. On the Category column title, click Context menu > Group By Category  "
     ],
     "correctAnswers": ["A", "E"],
     "multipleChoice": true
@@ -2157,7 +2157,7 @@ const CSA = [
   {
     "id": 190,
     "text": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
-    "options": ["A. Module", "B. Content Frame", "C. Application Navigator", "D. Banner Most Voted"],
+    "options": ["A. Module", "B. Content Frame", "C. Application Navigator", "D. Banner  "],
     "correctAnswers": ["D"],
     "multipleChoice": false
   },
@@ -2566,7 +2566,7 @@ const CSA = [
     "options": [
       "A. Lookup",
       "B. Preview",
-      "C. Reference Most Voted",
+      "C. Reference  ",
       "D. Snapshot",
       "E. Quickview",
       "F. Drilldown"
@@ -2579,7 +2579,7 @@ const CSA = [
     "text": "While on an Incident record, how would you add a Tag for \"Special Handling\" to the record?",
     "options": [
       "A. Click on the Context menu, select Add Tag, type Special Handling, press enter",
-      "B. Click on the More options (...) icon, click Add Tag, type Special Handling, press enter Most Voted",
+      "B. Click on the More options (...) icon, click Add Tag, type Special Handling, press enter  ",
       "C. On the Tag field, select Special Handling from the choice list",
       "D. On the Special Handling field, check the box"
     ],
@@ -2592,7 +2592,7 @@ const CSA = [
     "options": [
       "A. Roles",
       "B. Groups",
-      "C. User Criteria Most Voted",
+      "C. User Criteria  ",
       "D. Categories"
     ],
     "correctAnswers": ["C"],
@@ -2602,7 +2602,7 @@ const CSA = [
     "id": 244,
     "text": "When moving a homepage or dashboard between instances, what must you remember?",
     "options": [
-      "A. Manually add them to the update set Most Voted",
+      "A. Manually add them to the update set  ",
       "B. They cannot be moved via update set",
       "C. They are automatically added to the update set",
       "D. Create a separate update set for them"
@@ -2616,7 +2616,7 @@ const CSA = [
     "options": [
       "A. sys_groups",
       "B. group",
-      "C. sys_user_group Most Voted",
+      "C. sys_user_group  ",
       "D. sys_group"
     ],
     "correctAnswers": ["C"],
@@ -2627,10 +2627,10 @@ const CSA = [
     "text": "Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)",
     "options": [
       "A. Look for Update",
-      "B. Create Record Most Voted",
-      "C. Ask for Approval Most Voted",
-      "D. Look Up Record Most Voted",
-      "E. Wait for Condition Most Voted",
+      "B. Create Record  ",
+      "C. Ask for Approval  ",
+      "D. Look Up Record  ",
+      "E. Wait for Condition  ",
       "F. Wait for Match"
     ],
     "correctAnswers": ["B", "C", "D", "E"],
@@ -2644,7 +2644,7 @@ const CSA = [
       "B. Authorize [authorize_user]",
       "C. Reviewer [reviewer_user]",
       "D. Verification [verify_user]",
-      "E. Approver [approver_user] Most Voted"
+      "E. Approver [approver_user]  "
     ],
     "correctAnswers": ["E"],
     "multipleChoice": false
@@ -2653,7 +2653,7 @@ const CSA = [
     "id": 248,
     "text": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?",
     "options": [
-      "A. Can Contribute Most Voted",
+      "A. Can Contribute  ",
       "B. Cannot Author",
       "C. Can Read",
       "D. Can Write",
@@ -2666,9 +2666,9 @@ const CSA = [
     "id": 249,
     "text": "What types of entities can receive task assignments, in ServiceNow? (Choose two.)",
     "options": [
-      "A. Users Most Voted",
+      "A. Users  ",
       "B. Departments",
-      "C. Groups Most Voted",
+      "C. Groups  ",
       "D. Teams"
     ],
     "correctAnswers": ["A", "C"],
@@ -2681,7 +2681,7 @@ const CSA = [
       "A. Layout",
       "B. Format",
       "C. Configure",
-      "D. Style Most Voted"
+      "D. Style  "
     ],
     "correctAnswers": ["D"],
     "multipleChoice": false
@@ -2693,7 +2693,7 @@ const CSA = [
       "A. Extended tables are always extended from Parent tables. Extended tables are usually extended from Base tables.",
       "B. Extended tables can be extended from Parent tables or Base tables; but they cannot be extended from both.",
       "C. Base Class tables always have tables extended from them. Parent tables do not have tables extended from them.",
-      "D. Base Class table is not extended from another table, Parent class tables may be extended from another table. Most Voted"
+      "D. Base Class table is not extended from another table, Parent class tables may be extended from another table.  "
     ],
     "correctAnswers": ["D"],
     "multipleChoice": false
@@ -2702,12 +2702,12 @@ const CSA = [
     "id": 252,
     "text": "When a custom table is created, which access control rules are automatically created? (Choose four.)",
     "options": [
-      "A. create Most Voted",
-      "B. delete Most Voted",
+      "A. create  ",
+      "B. delete  ",
       "C. execute",
       "D. update",
-      "E. read Most Voted",
-      "F. write Most Voted"
+      "E. read  ",
+      "F. write  "
     ],
     "correctAnswers": ["A", "B", "E", "F"],
     "multipleChoice": true
@@ -2718,7 +2718,7 @@ const CSA = [
     "options": [
       "A. Magnifier",
       "B. Question mark",
-      "C. Gear Most Voted",
+      "C. Gear  ",
       "D. Chat bubbles"
     ],
     "correctAnswers": ["C"],
@@ -2730,7 +2730,7 @@ const CSA = [
     "options": [
       "A. Magnifier",
       "B. Question mark",
-      "C. Gear Most Voted",
+      "C. Gear  ",
       "D. Chat bubbles"
     ],
     "correctAnswers": ["C"],
@@ -2740,9 +2740,9 @@ const CSA = [
     "id": 255,
     "text": "When building an extended table from a base table, which fields do you need to create? (Choose two.)",
     "options": [
-      "A. The fields that are not in the base table. Most Voted",
+      "A. The fields that are not in the base table.  ",
       "B. The mandatory fields for the base table.",
-      "C. The fields that are specific to the extended table. Most Voted",
+      "C. The fields that are specific to the extended table.  ",
       "D. The reference fields for the base table."
     ],
     "correctAnswers": ["A", "C"],
@@ -2752,8 +2752,8 @@ const CSA = [
     "id": 256,
     "text": "While showing a customer their Incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? (Choose two.)",
     "options": [
-      "A. Right click on Priority and select Configure Label Most Voted",
-      "B. Right click on Priority and select Configure Dictionary Most Voted",
+      "A. Right click on Priority and select Configure Label  ",
+      "B. Right click on Priority and select Configure Dictionary  ",
       "C. Right click on Priority and select Configure Display Settings",
       "D. Right click on Priority and select Configure Column"
     ],
@@ -2765,7 +2765,7 @@ const CSA = [
     "text": "As administrator, what must you do to access features of High Security Settings?",
     "options": [
       "A. Impersonate Security Admin",
-      "B. Select Elevate Roles Most Voted",
+      "B. Select Elevate Roles  ",
       "C. Add security_admin role to your user account",
       "D. Use System Administration > Elevate Roles module"
     ],
@@ -2780,7 +2780,7 @@ const CSA = [
       "B. Timeline",
       "C. Journal",
       "D. Diary",
-      "E. Activity Most Voted"
+      "E. Activity  "
     ],
     "correctAnswers": ["E"],
     "multipleChoice": false
@@ -2789,7 +2789,7 @@ const CSA = [
     "id": 259,
     "text": "How would you navigate to the Schema map for a table?",
     "options": [
-      "A. System Definition > Tables; Select Table; Go to Related links and click Show Schema Map Most Voted",
+      "A. System Definition > Tables; Select Table; Go to Related links and click Show Schema Map  ",
       "B. System Dictionary > Show Schema Map; Select Table",
       "C. System Definition > Show Schema Map; Select Table",
       "D. System Definition > Dictionary; Select Table; Go to Related links and click Show Schema Map"
@@ -2802,7 +2802,7 @@ const CSA = [
     "text": "Which is the base table of the configuration management database hierarchy?",
     "options": [
       "A. cmdb_ci",
-      "B. cmdb Most Voted",
+      "B. cmdb  ",
       "C. cmdb_rel_ci",
       "D. ucmdb"
     ],
@@ -3074,7 +3074,7 @@ const CSA = [
       "B. Properties",
       "C. Configure",
       "D. Sources",
-      "E. Data Most Voted"
+      "E. Data  "
     ],
     "correctAnswers": ["E"],
     "multipleChoice": false
