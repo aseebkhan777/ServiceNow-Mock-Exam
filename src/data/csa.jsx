@@ -37,7 +37,7 @@ const CSA = [
 
   {
     "id": 6, "text": "Knowledge Base Search results can be sorted by which of the following? (Choose three.)",
-    "options": ["Most recent update", "Popularity", "Relevancy  ", "Manager assignment", "Number of views"],
+    "options": ["Most recent update", "Popularity", "Relevancy", "Manager assignment", "Number of views"],
     "correctAnswers": ["Most recent update", "Relevancy", "Number of views"],
     "multipleChoice": true
   },
@@ -169,7 +169,7 @@ const CSA = [
 
   {
     "id": 26, "text": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)",
-    "options": ["onSubmit  ", "onUpdate", "onCellEdit", "onLoad", "onEdit", "onChange", "onSave"],
+    "options": ["onSubmit", "onUpdate", "onCellEdit", "onLoad", "onEdit", "onChange", "onSave"],
     "correctAnswers": ["onSubmit", "onCellEdit", "onLoad", "onChange"],
     "multipleChoice": true
   },
@@ -197,7 +197,7 @@ const CSA = [
 
   {
     "id": 30, "text": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)",
-    "options": ["Service Processes", "User Permissions", "Tables and Fields", "A Database  ", "The Dependency View"],
+    "options": ["Service Processes", "User Permissions", "Tables and Fields", "A Database", "The Dependency View"],
     "correctAnswers": ["Service Processes", "Tables and Fields", "A Database", "The Dependency View"],
     "multipleChoice": true
   },
@@ -252,18 +252,30 @@ const CSA = [
   },
 
   {
-    "id": 38, "text": "What is a catalog client script?",
-    "options": ["A catalog client script controls the flow of data between the Service Catalog and other ServiceNow applications", "A catalog client script executes client-side logic related to Service Catalog item variables", "A catalog client script is used for workflow management", "A catalog client script modifies the data from an order guide"],
-    "correctAnswers": ["A catalog client script executes client-side logic related to Service Catalog item variables"],
+    "id": 38,
+    "text": "What information does the System Dictionary contain?",
+    "options": [
+        "The human-readable labels and language settings",
+        "The definition for each table and column",
+        "The information on how tables relate to each other",
+        "The language dictionary used for spell checking"
+    ],
+    "correctAnswers": ["The definition for each table and column"],
     "multipleChoice": false
-  },
+},
 
   {
-    "id": 39, "text": "Which feature allows users to personalize the interface by changing colors and themes?",
-    "options": ["Theme Customization", "User Preferences", "UI Theme Editor", "Color Palette Customization"],
-    "correctAnswers": ["Theme Customization"],
+    "id": 39,
+    "text": "When working on a form, what is the difference between Insert and Update operations?",
+    "options": [
+        "Insert creates a new record and Update saves changes, both remain on the form",
+        "Insert creates a new record and Update saves changes, both exit the form",
+        "Insert saves changes and exits the form, Update saves changes and remains on the form",
+        "Insert saves changes and remains on the form, Update saves changes and exits the form"
+    ],
+    "correctAnswers": ["Insert creates a new record and Update saves changes, both exit the form"],
     "multipleChoice": false
-  },
+},
 
   {
     "id": 40,
@@ -597,7 +609,7 @@ const CSA = [
       "Formatter",
       "Assignment Rule"
     ],
-    "correctAnswers": ["A"],
+    "correctAnswers": ["Template"],
     "multipleChoice": false
   },
 
@@ -797,17 +809,17 @@ const CSA = [
 
   {
     "id": 81,
-    "text": "Audits should be robustly designed to reflect best practice, appropriate resources, and tested protocols and standards. They should also use what type of auditors?",
+    "text": "Which one of the following is an accurate list of changes that are captured in an Update Set?",
     "options": [
-      "Auditors working in the interest of the cloud customer",
-      "Independent auditors",
-      "Certified by CSA",
-      "Auditors working in the interest of the cloud provider",
-      "None of the above"
+        "Changes made to: tables, forms, schedules, and client scripts",
+        "Changes made to: tables, forms, Business Rules, and data records",
+        "Changes made to: tables, forms, groups, and configuration items (CIs)",
+        "Changes made to: table, forms, views, and fields"
     ],
-    "correctAnswers": ["Independent auditors"],
+    "correctAnswers": ["Changes made to: table, forms, views, and fields"],
     "multipleChoice": false
-  },
+},
+
 
   {
     "id": 82,
@@ -2671,13 +2683,14 @@ const CSA = [
     "correctAnswers": ["Select the Tag icon in the header and add the Tag"],
     "multipleChoice": false
   },
-  {
+{
     "id": 243,
     "text": "What feature allows you to limit who is able to contribute or read knowledge within a knowledge base?",
-    "options": ["Access Control List", "Knowledge Tags", "Security Rules", "Knowledge Permissions"],
-    "correctAnswers": ["Security Rules"],
+    "options": ["Roles", "Groups", "User Criteria", "Categories"],
+    "correctAnswers": ["User Criteria"],
     "multipleChoice": false
-  },
+}
+,
   {
     "id": 244,
     "text": "What are advantages of using Flow Designer?",
@@ -2974,7 +2987,7 @@ const CSA = [
       "Script that sets the answer variable to true or false",
       "Groups"
     ],
-    "correctAnswers": ["Conditional Expressions", "Roles", "CRUD"],
+    "correctAnswers": ["Conditional Expressions", "Roles", "Script that sets the answer variable to true or false"],
     "multipleChoice": true
   },
   {
@@ -3059,9 +3072,9 @@ const CSA = [
       "Properties",
       "Configure",
       "Sources",
-      "Data Most Voted"
+      "Data"
     ],
-    "correctAnswers": ["Data Most Voted"],
+    "correctAnswers": ["Data"],
     "multipleChoice": false
   },
   {
@@ -3863,7 +3876,7 @@ const CSA = [
       "Messenger",
       "SMS"
     ],
-    "correctAnswers": ["Email", "Messenger", "SMS"],
+    "correctAnswers": ["Email","Meeting Invitation", "SMS"],
     "multipleChoice": true
   },
   {
