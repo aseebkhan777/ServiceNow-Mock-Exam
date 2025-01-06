@@ -329,7 +329,7 @@ const CSA = [
     options: [
       "Order Guides restrict the number of items in an order to only one item per request",
       "Order Guide provide a list of guidelines for Administrators on how to set up item variables",
-      "Order Guide provide the ability to order multiple, related items as one request  ",
+      "Order Guide provide the ability to order multiple, related items as one request",
       "Order Guides take the user directly to the checkout without prompting for information",
     ],
     correctAnswers: [
@@ -2441,10 +2441,12 @@ const CSA = [
     options: [
       "Merge Default update sets before moving between instances",
       "Submit Default update set to application repository",
-      "Application Navigator",
-      "Banner",
+      "You should not use the Default Update sets for moving between instances",
+      "Keep Default update set to maximum of 20 records, for troubleshooting purposes",
     ],
-    correctAnswers: ["Banner"],
+    correctAnswers: [
+      "You should not use the Default Update sets for moving between instances",
+    ],
     multipleChoice: false,
   },
   {
@@ -3051,12 +3053,14 @@ const CSA = [
     id: 242,
     text: "While on an Incident record, how would you add a Tag for 'Special Handling' to the record?",
     options: [
-      "Click the Add Tag button and enter Special Handling",
-      "Select the Tag icon in the header and add the Tag",
-      "Use the Context Menu, select Add Tag",
-      "Create a New Tag option",
+      "Click on the Context menu, select Add Tag, type Special Handling, press enter",
+      "Click on the More options (...) icon, click Add Tag, type Special Handling, press enter",
+      "On the Tag field, select Special Handling from the choice list",
+      "On the Special Handling field, check the box",
     ],
-    correctAnswers: ["Select the Tag icon in the header and add the Tag"],
+    correctAnswers: [
+      "Click on the More options (...) icon, click Add Tag, type Special Handling, press enter",
+    ],
     multipleChoice: false,
   },
   {
@@ -3094,17 +3098,18 @@ const CSA = [
     id: 246,
     text: "Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)",
     options: [
-      "Record Create",
-      "Create or update record",
-      "Task Create",
-      "HTTP Request",
-      "Data Transformation",
+      "Look for Update",
+      "Create Record",
+      "Look Up Record",
+      "Wait for Condition",
+      "Wait for Match",
+      "Ask for Approval",
     ],
     correctAnswers: [
-      "Create or update record",
-      "Task Create",
-      "HTTP Request",
-      "Data Transformation",
+      "Create Record",
+      "Look Up Record",
+      "Wait for Condition",
+      "Ask for Approval",
     ],
     multipleChoice: true,
   },
