@@ -19,7 +19,7 @@ const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(7200);
+  const [timeLeft, setTimeLeft] = useState(60 * 60);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
