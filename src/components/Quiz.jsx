@@ -4,9 +4,14 @@ import SPM from "../data/spm";
 import HRSD from "../data/hrsd";
 import ITSM from "../data/itsm";
 import ITOM from "../data/itom";
-import CSA from "../data/csa"
+import CSA from "../data/csa1"
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
+import CSA2 from "../data/csa2";
+import CSA3 from "../data/csa3";
+import CSA4 from "../data/csa4";
+import CSA5 from "../data/csa5";
+import CSA6 from "../data/csa6";
 
 const Quiz = () => {
   const { state } = useLocation();
@@ -29,14 +34,29 @@ const Quiz = () => {
       case "ITOM":
         selectedQuestions = ITOM;
         break;
-      case "CSA":
+      case "CSA1":
         selectedQuestions = CSA;
+        break;
+      case "CSA2":
+        selectedQuestions = CSA2;
+        break;
+      case "CSA3":
+        selectedQuestions = CSA3;
+        break;
+      case "CSA4":
+        selectedQuestions = CSA4;
+        break;
+      case "CSA5":
+        selectedQuestions = CSA5;
+        break;
+      case "CSA6":
+        selectedQuestions = CSA6;
         break;
       default:
         selectedQuestions = SPM;
     }
 
-    const initialQuestions = getRandomQuestions(selectedQuestions, 358)
+    const initialQuestions = getRandomQuestions(selectedQuestions, 60)
       .filter((q) => q && q.text && q.options && q.correctAnswers)
       .map((q) => ({
         ...q,
