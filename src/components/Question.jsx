@@ -21,7 +21,7 @@ const Question = ({ question, selectedOption, onSelectOption, index }) => {
   return (
     <div className="mb-4 text-left">
       <h3 className="text-lg font-semibold">
-        {index + 1}. {question.text} {/* Display question number here */}
+        {index + 1}. {question.text}
       </h3>
       <div className="mt-2">
         {question.options.map((option) => (

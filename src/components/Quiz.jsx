@@ -12,6 +12,9 @@ import CSA3 from "../data/csa3";
 import CSA4 from "../data/csa4";
 import CSA5 from "../data/csa5";
 import CSA6 from "../data/csa6";
+import CAD1 from "../data/cad1";
+import CAD2 from "../data/cad2";
+import CAD3 from "../data/cad3";
 
 const Quiz = () => {
   const { state } = useLocation();
@@ -52,6 +55,15 @@ const Quiz = () => {
       case "CSA6":
         selectedQuestions = CSA6;
         break;
+        case "CAD1":
+        selectedQuestions = CAD1;
+        break;
+        case "CAD2":
+          selectedQuestions = CAD2;
+          break;
+          case "CAD3":
+            selectedQuestions = CAD3;
+            break;
       default:
         selectedQuestions = SPM;
     }
@@ -64,6 +76,7 @@ const Quiz = () => {
         options: shuffleArray(q.options || []),
         correctAnswers: q.correctAnswers || [],
       }));
+
 
     setQuestions(initialQuestions);
   }, [state.examType]);

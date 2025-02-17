@@ -63,6 +63,9 @@ const Home = () => {
           <option value="SPM">SPM</option>
           <option value="ITSM">ITSM</option>
           <option value="ITOM">ITOM</option>
+          <option value="CAD1">CAD1</option>
+          <option value="CAD2">CAD2</option>
+          <option value="CAD3">CAD3</option>
           <option value="CSA1">CSA1</option>
           <option value="CSA2">CSA2</option>
           <option value="CSA3">CSA3</option>
