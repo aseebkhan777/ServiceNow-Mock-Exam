@@ -183,7 +183,7 @@ const CSA = [
 
   {
     "id": 28, "text": "Which of the following statement describes the purpose of an Order Guide?",
-    "options": ["Order Guides restrict the number of items in an order to only one item per request", "Order Guide provide a list of guidelines for Administrators on how to set up item variables", "Order Guide provide the ability to order multiple, related items as one request  ", "Order Guides take the user directly to the checkout without prompting for information"],
+    "options": ["Order Guides restrict the number of items in an order to only one item per request", "Order Guide provide a list of guidelines for Administrators on how to set up item variables", "Order Guide provide the ability to order multiple, related items as one request", "Order Guides take the user directly to the checkout without prompting for information"],
     "correctAnswers": ["Order Guide provide the ability to order multiple, related items as one request"],
     "multipleChoice": false
   },
