@@ -610,7 +610,7 @@ const CAD1 = [
           "Display an empty homepage for the application",
           "Display a list of all records from the table"
         ],
-        correctAnswers: ["Open an empty form so new records can be created"],
+        correctAnswers: ["Display a list of all records from the table"],
         multipleChoice: false
       },
       {
