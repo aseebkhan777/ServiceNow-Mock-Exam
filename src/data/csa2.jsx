@@ -1,851 +1,903 @@
 const CSA2 = [
   {
     "id": 61,
-    "text": "Which of the following is NOT a core table in ServiceNow?",
+    "text": "Which section of the ServiceNow UI allows you to perform a global search?",
     "options": [
-      "A. Task",
-      "B. Incident",
-      "C. User",
-      "D. Asset"
+      "A. Application Navigator",
+      "B. Banner frame",
+      "C. List pane",
+      "D. Content frame"
     ],
     "correctAnswers": [
-      "D. Asset"
+      "B. Banner frame"
     ],
     "multipleChoice": false
   },
   {
     "id": 62,
-    "text": "Which of the following are components of the ServiceNow CMDB? (Choose two.)",
+    "text": "How do you make a list filter available to everyone?",
     "options": [
-      "A. Configuration Items (CIs)",
-      "B. Metrics",
-      "C. Relationships",
-      "D. Workflows"
+      "A. Make active, assign a name, and save",
+      "B. Assign a group, set visibility, and save",
+      "C. Assign a name, set visibility, and save",
+      "D. Make active, set visibility, and save"
     ],
     "correctAnswers": [
-      "A. Configuration Items (CIs)",
-      "C. Relationships"
+      "C. Assign a name, set visibility, and save"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 63,
-    "text": "What is a Configuration Item (CI)?",
+    "text": "What would NOT appear in the Application Navigator if `service` is typed into the filter field?",
     "options": [
-      "A. A request for a service",
-      "B. A record that represents a component of an IT environment",
-      "C. A workflow definition",
-      "D. A report configuration"
+      "A. Configuration > Business Services",
+      "B. Self-Service > Knowledge",
+      "C. Service Portal > Widgets",
+      "D. Incident > Assigned to me"
     ],
     "correctAnswers": [
-      "B. A record that represents a component of an IT environment"
+      "D. Incident > Assigned to me"
     ],
     "multipleChoice": false
   },
   {
     "id": 64,
-    "text": "Which role is required to manage users and groups?",
+    "text": "Which of the following is used to categorize, flag, and locate records?",
     "options": [
-      "A. itil",
-      "B. admin",
-      "C. user_admin",
-      "D. security_admin"
+      "A. Search",
+      "B. Favorites",
+      "C. Tags",
+      "D. Bookmarks"
     ],
     "correctAnswers": [
-      "C. user_admin"
+      "C. Tags"
     ],
     "multipleChoice": false
   },
   {
     "id": 65,
-    "text": "What is the purpose of an Assignment Rule?",
+    "text": "Which tool should be used to populate commonly used fields in a form?",
     "options": [
-      "A. To assign records to users or groups based on conditions",
-      "B. To control access to records",
-      "C. To automate email notifications",
-      "D. To generate reports"
+      "A. Template",
+      "B. Reference Qualifier",
+      "C. Formatter",
+      "D. Assignment Rule"
     ],
     "correctAnswers": [
-      "A. To assign records to users or groups based on conditions"
+      "A. Template"
     ],
     "multipleChoice": false
   },
   {
     "id": 66,
-    "text": "Which of the following is true about Business Rules?",
+    "text": "How is a group defined in ServiceNow?",
     "options": [
-      "A. They run only on the client side",
-      "B. They can run before or after database actions",
-      "C. They can only run asynchronously",
-      "D. They only apply to the Incident table"
+      "A. A group is one record stored in the Group Type [sys_user_group_type] table",
+      "B. A group is one record stored in the Group [sys_user_group] table",
+      "C. A group defines a set of users that share the same location",
+      "D. A group defines a set of users that share the same job title"
     ],
     "correctAnswers": [
-      "B. They can run before or after database actions"
+      "B. A group is one record stored in the Group [sys_user_group] table"
     ],
     "multipleChoice": false
   },
   {
     "id": 67,
-    "text": "Which of the following can trigger a Business Rule? (Choose two.)",
+    "text": "What is a role in ServiceNow?",
     "options": [
-      "A. Insert",
-      "B. Update",
-      "C. View",
-      "D. Delete"
+      "A. A role is one record in the Role [user_sys_role] table",
+      "B. A role is a set of modules for a particular application",
+      "C. A role is one record in the Role [sys_user_role] table",
+      "D. A role is a persona used in Live Feed Chat"
     ],
     "correctAnswers": [
-      "A. Insert",
-      "B. Update"
+      "C. A role is one record in the Role [sys_user_role] table"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 68,
-    "text": "Which of the following scripts execute on the client side?",
+    "text": "What is a Notification?",
     "options": [
-      "A. Business Rules",
-      "B. Client Scripts",
-      "C. Script Includes",
-      "D. Scheduled Jobs"
+      "A. A new Knowledge article created by a Business Rule",
+      "B. A tool for alerting users that events that concern them have occurred",
+      "C. A message through Connect related to a Change Request",
+      "D. An email file attachment"
     ],
     "correctAnswers": [
-      "B. Client Scripts"
+      "B. A tool for alerting users that events that concern them have occurred"
     ],
     "multipleChoice": false
   },
   {
     "id": 69,
-    "text": "Which object is used to display messages on a form?",
+    "text": "Which one of the following is NOT a type of Visual Task Board?",
     "options": [
-      "A. GlideSystem (gs)",
-      "B. GlideRecord",
-      "C. g_form",
-      "D. g_user"
+      "A. Flexible",
+      "B. Freeform",
+      "C. Feature",
+      "D. Guided boards"
     ],
     "correctAnswers": [
-      "C. g_form"
+      "C. Feature"
     ],
     "multipleChoice": false
   },
   {
     "id": 70,
-    "text": "Which of the following is a valid data type for a field?",
+    "text": "What is (are) best practice(s) regarding users/groups/roles? (Choose two.)",
     "options": [
-      "A. Number",
-      "B. Character",
-      "C. TextArea",
-      "D. AlphaNumeric"
+      "A. You should never assign roles to groups.",
+      "B. You should assign roles to users.",
+      "C. You should add users to groups.",
+      "D. You should assign roles to groups."
     ],
     "correctAnswers": [
-      "A. Number"
+      "C. You should add users to groups.",
+      "D. You should assign roles to groups."
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 71,
-    "text": "What is the purpose of a UI Policy?",
+    "text": "What are two ways to generate an Event? (Choose two.)",
     "options": [
-      "A. Control form behavior without scripting",
-      "B. Control database access",
-      "C. Execute server-side logic",
-      "D. Generate reports"
+      "A. Business Rule",
+      "B. Workflow",
+      "C. Log entry",
+      "D. Knowledge article publication"
     ],
     "correctAnswers": [
-      "A. Control form behavior without scripting"
+      "A. Business Rule",
+      "B. Workflow"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 72,
-    "text": "Which of the following is NOT a type of Client Script?",
+    "text": "Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?",
     "options": [
-      "A. onLoad",
-      "B. onChange",
-      "C. onSubmit",
-      "D. onDelete"
+      "A. Task [task]",
+      "B. Assignment [assignment]",
+      "C. Service [service]",
+      "D. Workflow [workflow]"
     ],
     "correctAnswers": [
-      "D. onDelete"
+      "A. Task [task]"
     ],
     "multipleChoice": false
   },
   {
     "id": 73,
-    "text": "Which one of the following is true about Reference fields?",
+    "text": "Which of the following statements describes how data is organized in a table?",
     "options": [
-      "A. They store the display value",
-      "B. They store the sys_id",
-      "C. They can only reference the User table",
-      "D. They cannot be indexed"
+      "A. A column is a field in the database and a record is one user",
+      "B. A column is one field and a record is one row",
+      "C. A column is one field and a record is one column",
+      "D. A column contains data from one user and a record is one set of fields"
     ],
     "correctAnswers": [
-      "B. They store the sys_id"
+      "B. A column is one field and a record is one row"
     ],
     "multipleChoice": false
   },
   {
     "id": 74,
-    "text": "Which of the following is used to store reusable server-side logic?",
+    "text": "What is a sys_id?",
     "options": [
-      "A. Business Rule",
-      "B. Script Include",
-      "C. Client Script",
-      "D. UI Policy"
+      "A. Unique 32-character identifier that is assigned to every record",
+      "B. A client-side Business Rule",
+      "C. A server-side Business Rule",
+      "D. Unique 64-character identifier that is assigned to every record"
     ],
     "correctAnswers": [
-      "B. Script Include"
+      "A. Unique 32-character identifier that is assigned to every record"
     ],
     "multipleChoice": false
   },
   {
     "id": 75,
-    "text": "Which object is used to query records from the database?",
+    "text": "When creating a global custom table named `abc`, what is the table name that is automatically assigned by the platform?",
     "options": [
-      "A. g_form",
-      "B. GlideRecord",
-      "C. g_user",
-      "D. GlideAjax"
+      "A. snc_abc",
+      "B. abc",
+      "C. u_abc",
+      "D. sys_abc"
     ],
     "correctAnswers": [
-      "B. GlideRecord"
+      "C. u_abc"
     ],
     "multipleChoice": false
   },
   {
     "id": 76,
-    "text": "Which of the following is NOT a UI Action?",
+    "text": "Access Control rules may provide access security for which of the following database objects?",
     "options": [
-      "A. Form button",
-      "B. Form link",
-      "C. List banner button",
-      "D. Client Script"
+      "A. For a specific role, group, or user",
+      "B. For a specific row, column, or table",
+      "C. For specific groups",
+      "D. For a specific CMDB Configuration item"
     ],
     "correctAnswers": [
-      "D. Client Script"
+      "B. For a specific row, column, or table"
     ],
     "multipleChoice": false
   },
   {
     "id": 77,
-    "text": "Which of the following statements is true about Update Sets?",
+    "text": "What is the primary application used to load data into ServiceNow?",
     "options": [
-      "A. They track data changes",
-      "B. They track configuration changes",
-      "C. They replace source control",
-      "D. They are applied automatically"
+      "A. Service Level Management",
+      "B. Configuration",
+      "C. System Import Sets",
+      "D. System Update Sets"
     ],
     "correctAnswers": [
-      "B. They track configuration changes"
+      "C. System Import Sets"
     ],
     "multipleChoice": false
   },
   {
     "id": 78,
-    "text": "Which of the following can be used to create reports? (Choose two.)",
+    "text": "Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?",
     "options": [
-      "A. List view",
-      "B. Performance Analytics",
-      "C. Import Sets",
-      "D. Update Sets"
+      "A. Select Data Source, Schedule Transform",
+      "B. Load Data, Create Transform Map, Run Transform",
+      "C. Define Data Source, Select Transform Map, Run Transform",
+      "D. Select Import Set, Select Transform Map, Run Transform"
     ],
     "correctAnswers": [
-      "A. List view",
-      "B. Performance Analytics"
+      "B. Load Data, Create Transform Map, Run Transform"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 79,
-    "text": "Which of the following is a valid authentication method? (Choose two.)",
+    "text": "Which tool is used for creating dependencies between configuration items in the CMDB?",
     "options": [
-      "A. LDAP",
-      "B. Local database",
-      "C. FTP",
-      "D. SNMP"
+      "A. CI Relationship Editor",
+      "B. CMDB Builder",
+      "C. CI Service Manager",
+      "D. Cl Class Manager"
     ],
     "correctAnswers": [
-      "A. LDAP",
-      "B. Local database"
+      "A. CI Relationship Editor"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 80,
-    "text": "Which of the following statements is true about Roles?",
+    "text": "What is the difference between a UI Policy and Data Policy?",
     "options": [
-      "A. Roles control what users can see and do",
-      "B. Roles are optional",
-      "C. Roles apply only to reports",
-      "D. Roles cannot be inherited"
+      "A. Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI Policies are set only by web services",
+      "B. Data Policies can be converted into UI Policies, but UI Policies cannot be converted into Data Policies",
+      "C. Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form interactions",
+      "D. Data Policies run only after UI Policies run successfully"
     ],
     "correctAnswers": [
-      "A. Roles control what users can see and do"
+      "C. Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form interactions"
     ],
     "multipleChoice": false
   },
   {
     "id": 81,
-    "text": "What is the purpose of a Business Rule?",
+    "text": "Which one of the following is an accurate list of changes that are captured in an Update Set?",
     "options": [
-      "A. Control form behavior",
-      "B. Enforce business logic on the server side",
-      "C. Create reports",
-      "D. Manage user roles"
+      "A. Changes made to: tables, forms, schedules, and client scripts",
+      "B. Changes made to: tables, forms, Business Rules, and data records",
+      "C. Changes made to: tables, forms, groups, and configuration items (CIs)",
+      "D. Changes made to: table, forms, views, and fields"
     ],
     "correctAnswers": [
-      "B. Enforce business logic on the server side"
+      "D. Changes made to: table, forms, views, and fields"
     ],
     "multipleChoice": false
   },
   {
     "id": 82,
-    "text": "Which of the following Business Rule timing options are available? (Choose three.)",
+    "text": "What are the steps to retrieve an Update Set?",
     "options": [
-      "A. Before",
-      "B. After",
-      "C. Async",
-      "D. OnLoad",
-      "E. Display"
+      "A. Verify Update Set is Complete, Retrieve, Preview, Apply",
+      "B. Verify Update Set is Complete, Test Connection, Apply",
+      "C. Verify Update Set is Complete, Test Connection, Commit",
+      "D. Verify Update Set is Complete, Retrieve, Preview, Commit"
     ],
     "correctAnswers": [
-      "A. Before",
-      "B. After",
-      "C. Async"
+      "D. Verify Update Set is Complete, Retrieve, Preview, Commit"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 83,
-    "text": "Which of the following is NOT a client-side script?",
+    "text": "Integration Hub enables execution of third-party APIs as a part of a flow. These integrations are referred to as",
     "options": [
-      "A. Client Script",
-      "B. UI Policy",
-      "C. Business Rule",
-      "D. UI Script"
+      "A. an action",
+      "B. a spoke",
+      "C. a connection",
+      "D. an integration step"
     ],
     "correctAnswers": [
-      "C. Business Rule"
+      "B. a spoke"
     ],
     "multipleChoice": false
   },
   {
     "id": 84,
-    "text": "Which object is used to retrieve system properties?",
+    "text": "Which of the following protects applications by identifying and restricting access to available files and data?",
     "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. gs",
-      "D. GlideRecord"
+      "A. Application Configuration",
+      "B. Verbose Log",
+      "C. Access Control Rules",
+      "D. Application Scope"
     ],
     "correctAnswers": [
-      "C. gs"
+      "D. Application Scope"
     ],
     "multipleChoice": false
   },
   {
     "id": 85,
-    "text": "Which of the following statements is true about Email Notifications?",
+    "text": "Which one statement correctly describes Access Control rule evaluation?",
     "options": [
-      "A. They can only be triggered manually",
-      "B. They can be triggered by events or conditions",
-      "C. They only support plain text",
-      "D. They can only be sent to administrators"
+      "A. Table access rules are evaluated from the general to the specific",
+      "B. If more than one rule applies to a record, the older rule is evaluated first",
+      "C. If a row level rule and a field level rule exist, both rules must be true before an operation is allowed",
+      "D. The role with the most permissions evaluates the rules first."
     ],
     "correctAnswers": [
-      "B. They can be triggered by events or conditions"
+      "C. If a row level rule and a field level rule exist, both rules must be true before an operation is allowed"
     ],
     "multipleChoice": false
   },
   {
     "id": 86,
-    "text": "Which of the following can trigger an Email Notification?",
+    "text": "ServiceNow contains a resource which provides the following: ✑ A standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting. ✑ A CMDB framework across our products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?",
     "options": [
-      "A. Client Script",
-      "B. Event",
-      "C. Scheduled Job",
-      "D. UI Policy"
+      "A. Common Services Data Model (CSDM)",
+      "B. Information Technology Service Management (ITSM)",
+      "C. Configuration Management Database (CMDB)",
+      "D. Information Technology Infrastructure Library (ITIL)"
     ],
     "correctAnswers": [
-      "B. Event"
+      "A. Common Services Data Model (CSDM)"
     ],
     "multipleChoice": false
   },
   {
     "id": 87,
-    "text": "Which object is used to store reusable server-side logic?",
+    "text": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?",
     "options": [
-      "A. Business Rule",
-      "B. Client Script",
-      "C. Script Include",
-      "D. UI Policy"
+      "A. The Service Desk > My Groups Work list shows active work tasks that are not yet assigned.",
+      "B. The manager does not have the itil role.",
+      "C. The manager is not a member of the Service Desk group.",
+      "D. The manager is not a member of the Network and Hardware groups.",
+      "E. The Assignment Group manager field is empty."
     ],
     "correctAnswers": [
-      "C. Script Include"
+      "D. The manager is not a member of the Network and Hardware groups."
     ],
     "multipleChoice": false
   },
   {
     "id": 88,
-    "text": "Which of the following is a valid REST method?",
+    "text": "What do you need to do before you can use an Application-based trigger in your flow?",
     "options": [
-      "A. GET",
-      "B. COPY",
-      "C. MOVE",
-      "D. FETCH"
+      "A. Activate application trigger spoke",
+      "B. Activate trigger security rules",
+      "C. Activate application spoke, and plug-ins as needed",
+      "D. Assign Application trigger role [sn_app_trigger_write] to SME",
+      "E. Activate application plugins only"
     ],
     "correctAnswers": [
-      "A. GET"
+      "C. Activate application spoke, and plug-ins as needed"
     ],
     "multipleChoice": false
   },
   {
     "id": 89,
-    "text": "Which object is used to pass information from server-side scripts to client-side scripts?",
+    "text": "The ServiceNow platform includes which types of interfaces? (Choose three.)",
     "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. g_scratchpad",
-      "D. current"
+      "A. Now Mobile Apps",
+      "B. Agent Control Center",
+      "C. Back Office Dashboard",
+      "D. Service Portals",
+      "E. Now Platform® User Interfaces",
+      "F. Field Service Taskboard"
     ],
     "correctAnswers": [
-      "C. g_scratchpad"
+      "A. Now Mobile Apps",
+      "D. Service Portals",
+      "E. Now Platform® User Interfaces"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 90,
-    "text": "Which of the following is NOT part of ServiceNow Studio?",
+    "text": "Which of the following are not included in an Update Set, by default? (Choose four.)",
     "options": [
-      "A. Source control integration",
-      "B. Application file management",
-      "C. Schema Map editor",
-      "D. Code search"
+      "A. Homepages",
+      "B. Data",
+      "C. Published Workflows",
+      "D. Business Rules",
+      "E. Schedules",
+      "F. Database changes",
+      "G. Related Lists",
+      "H. Report Definitions",
+      "I. Scheduled Jobs",
+      "J. Client Scripts",
+      "K. Views"
     ],
     "correctAnswers": [
-      "C. Schema Map editor"
+      "A. Homepages",
+      "B. Data",
+      "E. Schedules",
+      "I. Scheduled Jobs"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 91,
-    "text": "Which of the following statements is true about Update Sets?",
+    "text": "You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that? (Choose two.)",
     "options": [
-      "A. They capture data records",
-      "B. They track configuration changes",
-      "C. They replace source control",
-      "D. They apply automatically"
+      "A. Select Fields and Columns module",
+      "B. Right click on form header, select Configure > Form Layout",
+      "C. Click on context menu, select Configure > Form Designer",
+      "D. Select Field Class Manager module"
     ],
     "correctAnswers": [
-      "B. They track configuration changes"
+      "B. Right click on form header, select Configure > Form Layout",
+      "C. Click on context menu, select Configure > Form Designer"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 92,
-    "text": "Which of the following can be used to automate processes without scripting?",
+    "text": "Which ServiceNow resource is a framework that ensures the data your ServiceNow application requires maps correctly to the appropriate CMDB tables?",
     "options": [
-      "A. Business Rules",
-      "B. Client Scripts",
-      "C. Flow Designer",
-      "D. Script Includes"
+      "A. Common Service Data Model (CSDM)",
+      "B. Service Mapping Utility (SMU)",
+      "C. Service Schema Map (SSM)",
+      "D. CMDB Class Manager (CMDBCM)",
+      "E. CI Class Manager (CICM)"
     ],
     "correctAnswers": [
-      "C. Flow Designer"
+      "A. Common Service Data Model (CSDM)"
     ],
     "multipleChoice": false
   },
   {
     "id": 93,
-    "text": "Which role allows a user to impersonate another user?",
+    "text": "What do you activate when you want to add applications or functionality within your development instance?",
     "options": [
-      "A. itil",
-      "B. impersonator",
-      "C. admin",
-      "D. user_admin"
+      "A. App Package",
+      "B. Updated Pack",
+      "C. Patch",
+      "D. Plugin",
+      "E. App Updated Set"
     ],
     "correctAnswers": [
-      "C. admin"
+      "D. Plugin"
     ],
     "multipleChoice": false
   },
   {
     "id": 94,
-    "text": "Which of the following is NOT a supported authentication method?",
+    "text": "What field contains a record's 32-character, unique identifier?",
     "options": [
-      "A. LDAP",
-      "B. SSO",
-      "C. Local database",
-      "D. FTP"
+      "A. sn_rec_id",
+      "B. rec_id",
+      "C. u_id",
+      "D. sys_id",
+      "E. sn_gu_id",
+      "F. sn_sys_id",
+      "G. id"
     ],
     "correctAnswers": [
-      "D. FTP"
+      "D. sys_id"
     ],
     "multipleChoice": false
   },
   {
     "id": 95,
-    "text": "Which of the following is true about Roles?",
+    "text": "Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T- shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non-managers) can submit the order?",
     "options": [
-      "A. Roles control what users can see and do",
-      "B. Roles are optional",
-      "C. Roles only apply to reports",
-      "D. Roles cannot be inherited"
+      "A. Create Record Producer and use the Available For list to specify First Line [sn_first_line] role",
+      "B. Create Catalog Item and use the Not Available list to specify the Manager Group",
+      "C. Create Catalog Item and use the Available For list to specify ITIL [itil] role",
+      "D. Create Order Guide and use the User Criteria list to specify First Line [sn_first_line] role"
     ],
     "correctAnswers": [
-      "A. Roles control what users can see and do"
+      "B. Create Catalog Item and use the Not Available list to specify the Manager Group"
     ],
     "multipleChoice": false
   },
   {
     "id": 96,
-    "text": "Which of the following is a core ServiceNow table?",
+    "text": "What is used frequently to move customizations from one instance to another?",
     "options": [
-      "A. Task",
-      "B. Asset",
-      "C. CMDB",
-      "D. SLA"
+      "A. Update Sets",
+      "B. Code Sets",
+      "C. Update Packs",
+      "D. Configuration Logs",
+      "E. Remote Sets",
+      "F. Local Sets",
+      "G. Code Packs"
     ],
     "correctAnswers": [
-      "A. Task"
+      "A. Update Sets"
     ],
     "multipleChoice": false
   },
   {
     "id": 97,
-    "text": "Which of the following statements is true about Reference fields?",
+    "text": "What icon do you use to change the label on a Favorite?",
     "options": [
-      "A. They store the display value",
-      "B. They store the sys_id",
-      "C. They can only reference the User table",
-      "D. They cannot be indexed"
+      "A. Clock",
+      "B. Hamburger",
+      "C. Pencil",
+      "D. Three dots",
+      "E. Triangle.",
+      "F. Star"
     ],
     "correctAnswers": [
-      "B. They store the sys_id"
+      "C. Pencil"
     ],
     "multipleChoice": false
   },
   {
     "id": 98,
-    "text": "Which object is used to query the database?",
+    "text": "What needs to be specified, when creating a Business Rule? (Choose four.)",
     "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. GlideRecord",
-      "D. GlideAjax"
+      "A. UI action",
+      "B. Table",
+      "C. Fields to update",
+      "D. Who can run",
+      "E. Script to run",
+      "F. Application scope",
+      "G. Update set",
+      "H. Timing",
+      "I. Condition to evaluate"
     ],
     "correctAnswers": [
-      "C. GlideRecord"
+      "B. Table",
+      "E. Script to run",
+      "H. Timing",
+      "I. Condition to evaluate"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 99,
-    "text": "Which of the following is NOT a UI Action?",
+    "text": "What feature can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time?",
     "options": [
-      "A. Form button",
-      "B. Form link",
-      "C. List banner button",
-      "D. Client Script"
+      "A. Task Escalation Clock",
+      "B. Service Level Agreements",
+      "C. Inactivity Monitor",
+      "D. Response Time Clock",
+      "E. Business Time Remaining"
     ],
     "correctAnswers": [
-      "D. Client Script"
+      "B. Service Level Agreements"
     ],
     "multipleChoice": false
   },
   {
     "id": 100,
-    "text": "Which of the following is a benefit of using scoped applications?",
+    "text": "What is a quick way to create a report from a list view?",
     "options": [
-      "A. Automatic access to all APIs",
-      "B. Reduced risk of name collisions",
-      "C. No security restrictions",
-      "D. Unlimited cross-scope access"
+      "A. Click on filter breadcrumb, drag and drop on the Report > Create New module",
+      "B. Click Funnel, define filter conditions, click Create Report",
+      "C. Click Context Menu, select Create Report",
+      "D. Apply filter, right click on column header, select Bar Chart",
+      "E. Apply filter, right click on column header, select Create Report"
     ],
     "correctAnswers": [
-      "B. Reduced risk of name collisions"
+      "D. Apply filter, right click on column header, select Bar Chart"
     ],
     "multipleChoice": false
   },
   {
     "id": 101,
-    "text": "Which of the following is used to manage data integrity in ServiceNow?",
+    "text": "What import utility do you use when the field names on the import set match the name of the fields on the Target table?",
     "options": [
-      "A. UI Policies",
-      "B. Business Rules",
-      "C. Client Scripts",
-      "D. UI Actions"
+      "A. Schema Mapping",
+      "B. Automatic Mapping",
+      "C. Mapping Assist",
+      "D. Mapping Dashboard"
     ],
     "correctAnswers": [
-      "B. Business Rules"
+      "B. Automatic Mapping"
     ],
     "multipleChoice": false
   },
   {
     "id": 102,
-    "text": "Which of the following allows you to define conditions for showing or hiding fields on a form without scripting?",
+    "text": "As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?",
     "options": [
-      "A. Client Script",
-      "B. Business Rule",
-      "C. UI Policy",
-      "D. Script Include"
+      "A. Knowledge",
+      "B. ServiceNow Wiki",
+      "C. Knowledge Now",
+      "D. SharePoint",
+      "E. Stack Overflow"
     ],
     "correctAnswers": [
-      "C. UI Policy"
+      "A. Knowledge"
     ],
     "multipleChoice": false
   },
   {
     "id": 103,
-    "text": "Which of the following objects is available in client-side scripts?",
+    "text": "A new Service Desk employee in Latin America complains that the create dates and times are incorrect on their Incident list. What would you suggest to fix this issue?",
     "options": [
-      "A. GlideRecord",
-      "B. gs",
-      "C. g_form",
-      "D. current"
+      "A. Have them clear their cache.",
+      "B. Have them use the gear icon to set the employee's time zone.",
+      "C. Recommend they use Chrome, instead of Explorer.",
+      "D. Use the system properties to correct the instance's time zone.",
+      "E. Have them correct the time zone on their computer."
     ],
     "correctAnswers": [
-      "C. g_form"
+      "B. Have them use the gear icon to set the employee's time zone."
     ],
     "multipleChoice": false
   },
   {
     "id": 104,
-    "text": "Which of the following is NOT a valid ServiceNow field type?",
+    "text": "What are three security modules often used by the System Administrator? (Choose three.)",
     "options": [
-      "A. String",
-      "B. Integer",
-      "C. Boolean",
-      "D. Character Array"
+      "A. System Properties > Security",
+      "B. Utilities > Migrate Security",
+      "C. System Security > Security",
+      "D. Self-Service > My Access",
+      "E. System Security > Access Control (ACL)",
+      "F. Password Management > Security Questions",
+      "G. System Security > High Security Settings"
     ],
     "correctAnswers": [
-      "D. Character Array"
+      "A. System Properties > Security",
+      "E. System Security > Access Control (ACL)",
+      "G. System Security > High Security Settings"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 105,
-    "text": "Which feature allows users to edit multiple records directly from a list?",
+    "text": "When testing a catalog item, having a manager approval flows, which of these best practices would you follow? (Choose three.)",
     "options": [
-      "A. List Editor",
-      "B. Form Designer",
-      "C. UI Policy",
-      "D. Data Import"
+      "A. Make sure the latest flows are activated.",
+      "B. Use the instance Incognito setting to quickly toggle between requester and approver.",
+      "C. Impersonate the requester to ensure the form works.",
+      "D. Make sure the requester's user record has a manager specified.",
+      "E. Create and select your Testing Update Set, before starting the test cases.",
+      "F. Use your Admin account, so you can approve the items quickly."
     ],
     "correctAnswers": [
-      "A. List Editor"
+      "A. Make sure the latest flows are activated.",
+      "C. Impersonate the requester to ensure the form works.",
+      "D. Make sure the requester's user record has a manager specified."
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 106,
-    "text": "Which of the following can be used to automate approvals and task routing?",
+    "text": "What is a no-code approach to control the mandatory or read-only state of a form field?",
     "options": [
-      "A. Flow Designer",
-      "B. UI Policy",
-      "C. Client Script",
-      "D. List Layout"
+      "A. UI Action",
+      "B. Client Script",
+      "C. UI Script",
+      "D. UI Rule",
+      "E. UI Policy"
     ],
     "correctAnswers": [
-      "A. Flow Designer"
+      "E. UI Policy"
     ],
     "multipleChoice": false
   },
   {
     "id": 107,
-    "text": "Which of the following records controls access to tables and fields?",
+    "text": "When moving multiple update sets at one time, what might you do to facilitate the move?",
     "options": [
-      "A. Business Rules",
-      "B. UI Policies",
-      "C. Access Control Rules",
-      "D. Roles"
+      "A. Batch",
+      "B. Verify",
+      "C. Test",
+      "D. Preview"
     ],
     "correctAnswers": [
-      "C. Access Control Rules"
+      "A. Batch"
     ],
     "multipleChoice": false
   },
   {
     "id": 108,
-    "text": "Which of the following can be inherited by extended tables? (Choose two.)",
+    "text": "What is specified in an Access Control rule?",
     "options": [
-      "A. Fields",
-      "B. Records",
-      "C. Business Rules",
-      "D. Update Sets"
+      "A. Groups, Conditional Expressions and Workflows",
+      "B. Table Schema, CRUD, and User Authentication",
+      "C. Object and Operation being secured; Permissions required to access the object",
+      "D. security_admin"
     ],
     "correctAnswers": [
-      "A. Fields",
-      "C. Business Rules"
+      "C. Object and Operation being secured; Permissions required to access the object"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 109,
-    "text": "Which one of the following is true about deleting a record?",
+    "text": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?",
     "options": [
-      "A. Deleted records are archived automatically",
-      "B. Deleted records can be recovered without backups",
-      "C. Deleted records are permanently removed",
-      "D. Deleted records are marked inactive"
+      "A. Star",
+      "B. Clock",
+      "C. Application",
+      "D. Funnel"
     ],
     "correctAnswers": [
-      "C. Deleted records are permanently removed"
+      "C. Application"
     ],
     "multipleChoice": false
   },
   {
     "id": 110,
-    "text": "Which of the following objects is used to access the currently logged-in user on the client side?",
+    "text": "What do you call any component that needs to be managed in order to deliver services?",
     "options": [
-      "A. g_user",
-      "B. g_form",
-      "C. gs",
-      "D. GlideRecord"
+      "A. CSDM Items",
+      "B. CMDB",
+      "C. Configuration item",
+      "D. Service Offerings",
+      "E. Asset"
     ],
     "correctAnswers": [
-      "A. g_user"
+      "C. Configuration item"
     ],
     "multipleChoice": false
   },
   {
     "id": 111,
-    "text": "Which of the following is NOT a client-side script type?",
+    "text": "A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?",
     "options": [
-      "A. onLoad",
-      "B. onChange",
-      "C. onSubmit",
-      "D. After Insert"
+      "A. Specify the Dept_Mgr role on the catalog content block",
+      "B. Add the Department Manager group to the catalog item's user criteria",
+      "C. Add the Department Manager group to the catalog item's ACL",
+      "D. Only publish the item in the HR service catalog",
+      "E. Use a Dept_Mgr ACL on the HR service catalog"
     ],
     "correctAnswers": [
-      "D. After Insert"
+      "B. Add the Department Manager group to the catalog item's user criteria"
     ],
     "multipleChoice": false
   },
   {
     "id": 112,
-    "text": "Which of the following ServiceNow features supports automated testing?",
+    "text": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: ✑ Incidents where the state is Closed ✑ Incidents where Assignment Group is Network After clicking the Funnel icon, what should the user do?",
     "options": [
-      "A. Flow Designer",
-      "B. Automated Test Framework",
-      "C. Update Sets",
-      "D. UI Policies"
+      "A. Define the first condition; click AND button; define second condition; click Run",
+      "B. Define the first condition; click AND button; define second condition; press enter",
+      "C. Define the first condition; click OR button; define second condition; press enter",
+      "D. Define the first condition; click > icon on breadcrumb, define second condition; click Run",
+      "E. Define the first condition; click > icon on breadcrumb, define second condition; press enter"
     ],
     "correctAnswers": [
-      "B. Automated Test Framework"
+      "A. Define the first condition; click AND button; define second condition; click Run"
     ],
     "multipleChoice": false
   },
   {
     "id": 113,
-    "text": "Which of the following can be used to create a custom application?",
+    "text": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major Incident field?",
     "options": [
-      "A. Service Catalog",
-      "B. Studio",
-      "C. Update Sets",
-      "D. Reports"
+      "A. Incident.Major_Incident",
+      "B. incident=>major_incident",
+      "C. incident<=>major_incident",
+      "D. incident||major_incident",
+      "E. incident.major_incident"
     ],
     "correctAnswers": [
-      "B. Studio"
+      "E. incident.major_incident"
     ],
     "multipleChoice": false
   },
   {
     "id": 114,
-    "text": "Which object is used to log messages on the server side?",
+    "text": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. ✑ For HR, the item will be used primarily for the Onboarding coordinators, for employee orientation sessions. ✑ For Facilities, the item will be used for anyone in the company who needs room set up services. However, both departments have their own service catalogs. What do you do, to support these requirements?",
     "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. gs",
-      "D. GlideAjax"
+      "A. Create one Catalog Item for HR Event Room Set Up and one for Facilities Event Room Set Up; then publish each to the appropriate Catalog.",
+      "B. Create one Catalog Item for Event Room Set Up; then publish to both Catalogs.",
+      "C. Create one Catalog Item for Event Room Set Up; then publish to the Parent Catalog, which is accessible to both HR and Facilities.",
+      "D. Create one Catalog Item for Event Room Set Up; then use ACLs to control access."
     ],
     "correctAnswers": [
-      "C. gs"
+      "B. Create one Catalog Item for Event Room Set Up; then publish to both Catalogs."
     ],
     "multipleChoice": false
   },
   {
     "id": 115,
-    "text": "Which of the following can trigger a Business Rule? (Choose three.)",
+    "text": "After finishing your work on High Security Settings, what do you do to return to normal admin security levels?",
     "options": [
-      "A. Insert",
-      "B. Update",
-      "C. Delete",
-      "D. View"
+      "A. Select Normal role",
+      "B. Log out and back in",
+      "C. Use System Administration > Normal Security module",
+      "D. Select Global Update Set",
+      "E. End Impersonation"
     ],
     "correctAnswers": [
-      "A. Insert",
-      "B. Update",
-      "C. Delete"
+      "B. Log out and back in"
     ],
-    "multipleChoice": true
+    "multipleChoice": false
   },
   {
     "id": 116,
-    "text": "Which of the following is true about Scheduled Jobs?",
+    "text": "What type of field allows you to look up values from one other table?",
     "options": [
-      "A. They run on the client side",
-      "B. They execute scripts at defined times",
-      "C. They replace Business Rules",
-      "D. They require user interaction"
+      "A. Reference",
+      "B. Verity",
+      "C. Options",
+      "D. Selections",
+      "E. Dot walk",
+      "F. Lookup"
     ],
     "correctAnswers": [
-      "B. They execute scripts at defined times"
+      "A. Reference"
     ],
     "multipleChoice": false
   },
   {
     "id": 117,
-    "text": "Which of the following is a valid reason to use Delegated Development?",
+    "text": "Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?",
     "options": [
-      "A. To allow developers full admin access",
-      "B. To restrict access to certain application files",
-      "C. To replace application roles",
-      "D. To remove security restrictions"
+      "A. Process Automation > Flow Designer",
+      "B. Process Automation > Flow Administration",
+      "C. Process Automation > Workflow Editor",
+      "D. Process Automation > Process Flow",
+      "E. Process Automation > Active Flows"
     ],
     "correctAnswers": [
-      "B. To restrict access to certain application files"
+      "A. Process Automation > Flow Designer"
     ],
     "multipleChoice": false
   },
   {
     "id": 118,
-    "text": "Which of the following is true about Application Scope?",
+    "text": "A department manager asks an analyst to build some reports. Where do you recommend the analyst start?",
     "options": [
-      "A. Scope controls user passwords",
-      "B. Scope controls where application artifacts are stored",
-      "C. Scope replaces roles",
-      "D. Scope controls reporting permissions"
+      "A. Report Dashboard > Create New",
+      "B. Reports > Getting Started",
+      "C. Performance Analytics > Reports",
+      "D. Self-Service > Reports",
+      "E. Reports > Create New"
     ],
     "correctAnswers": [
-      "B. Scope controls where application artifacts are stored"
+      "E. Reports > Create New"
     ],
     "multipleChoice": false
   },
   {
     "id": 119,
-    "text": "Which of the following is NOT a benefit of scoped applications?",
+    "text": "What are the steps for applying an update set to an instance?",
     "options": [
-      "A. Improved security",
-      "B. Reduced naming conflicts",
-      "C. Automatic cross-scope access",
-      "D. Easier installation and removal"
+      "A. Retrieve, Preview, Commit",
+      "B. Specify, Transform, Apply",
+      "C. Retrieve, Assess, Apply",
+      "D. Get, Test, Push",
+      "E. Pull, Review, Push"
     ],
     "correctAnswers": [
-      "C. Automatic cross-scope access"
+      "A. Retrieve, Preview, Commit"
     ],
     "multipleChoice": false
   },
   {
     "id": 120,
-    "text": "Which of the following is required to link a ServiceNow application to a Git repository?",
+    "text": "When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?",
     "options": [
-      "A. Username",
-      "B. Password",
-      "C. Repository URL",
-      "D. All of the above"
+      "A. Run Transform",
+      "B. Run Import",
+      "C. Import Dataset",
+      "D. Execute Transform",
+      "E. Schedule Transform"
     ],
     "correctAnswers": [
-      "D. All of the above"
+      "A. Run Transform"
     ],
     "multipleChoice": false
   },
