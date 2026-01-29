@@ -1,588 +1,470 @@
 const CSA5 = [
   {
     "id": 241,
-    "text": "Which of the following best describes a ServiceNow list?",
+    "text": "On a form, which type of field has this icon which can be clicked, to see a preview of the associated record?",
     "options": [
-      "A. A visual representation of reports",
-      "B. A collection of records from a table",
-      "C. A form used to create records",
-      "D. A workflow definition"
+      "A. Lookup",
+      "B. Preview",
+      "C. Reference",
+      "D. Snapshot",
+      "E. Quickview",
+      "F. Drilldown"
     ],
     "correctAnswers": [
-      "B. A collection of records from a table"
+      "C. Reference"
     ],
     "multipleChoice": false
   },
   {
     "id": 242,
-    "text": "Which feature allows users to sort and filter records in a list?",
+    "text": "While on an Incident record, how would you add a Tag for \"Special Handling\" to the record?",
     "options": [
-      "A. Form Designer",
-      "B. List Controls",
-      "C. UI Policies",
-      "D. Import Sets"
+      "A. Click on the Context menu, select Add Tag, type Special Handling, press enter",
+      "B. Click on the More options (...) icon, click Add Tag, type Special Handling, press enter",
+      "C. On the Tag field, select Special Handling from the choice list",
+      "D. On the Special Handling field, check the box"
     ],
     "correctAnswers": [
-      "B. List Controls"
+      "B. Click on the More options (...) icon, click Add Tag, type Special Handling, press enter"
     ],
     "multipleChoice": false
   },
   {
     "id": 243,
-    "text": "Which of the following statements is true about forms in ServiceNow?",
+    "text": "What feature allows you to limit who is able to contribute or read knowledge within a knowledge base?",
     "options": [
-      "A. Forms are read-only",
-      "B. Forms display and allow editing of a single record",
-      "C. Forms cannot trigger scripts",
-      "D. Forms are only for administrators"
+      "A. Roles",
+      "B. Groups",
+      "C. User Criteria",
+      "D. Categories"
     ],
     "correctAnswers": [
-      "B. Forms display and allow editing of a single record"
+      "C. User Criteria"
     ],
     "multipleChoice": false
   },
   {
     "id": 244,
-    "text": "Which of the following can be used to personalize the user interface?",
+    "text": "When moving a homepage or dashboard between instances, what must you remember?",
     "options": [
-      "A. Update Sets",
-      "B. Personalize",
-      "C. Transform Maps",
-      "D. Assignment Rules"
+      "A. Manually add them to the update set",
+      "B. They cannot be moved via update set",
+      "C. They are automatically added to the update set",
+      "D. Create a separate update set for them"
     ],
     "correctAnswers": [
-      "B. Personalize"
+      "A. Manually add them to the update set"
     ],
     "multipleChoice": false
   },
   {
     "id": 245,
-    "text": "Which of the following allows inline editing of records in a list?",
+    "text": "What is the platform name for the Group table?",
     "options": [
-      "A. Form Designer",
-      "B. List Editor",
-      "C. UI Policy",
-      "D. Business Rule"
+      "A. sys_groups",
+      "B. group",
+      "C. sys_user_group",
+      "D. sys_group"
     ],
     "correctAnswers": [
-      "B. List Editor"
+      "C. sys_user_group"
     ],
     "multipleChoice": false
   },
   {
     "id": 246,
-    "text": "Which of the following statements is true about ServiceNow forms?",
+    "text": "Many actions are included with flow designer, what are some frequently used core actions? (Choose four.)",
     "options": [
-      "A. They can only be viewed, not edited",
-      "B. They allow users to view and edit records",
-      "C. They cannot run client-side scripts",
-      "D. They do not support UI Policies"
+      "A. Look for Update",
+      "B. Create Record",
+      "C. Ask for Approval",
+      "D. Look Up Record",
+      "E. Wait for Condition",
+      "F. Wait for Match"
     ],
     "correctAnswers": [
-      "B. They allow users to view and edit records"
+      "B. Create Record",
+      "C. Ask for Approval",
+      "D. Look Up Record",
+      "E. Wait for Condition"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 247,
-    "text": "Which of the following can be used to control field visibility without scripting?",
+    "text": "What role enables someone to authorize a request, with no other permissions on the platform?",
     "options": [
-      "A. Client Script",
-      "B. Business Rule",
-      "C. UI Policy",
-      "D. Script Include"
+      "A. Approval Group [approval_group]",
+      "B. Authorize [authorize_user]",
+      "C. Reviewer [reviewer_user]",
+      "D. Verification [verify_user]",
+      "E. Approver [approver_user]"
     ],
     "correctAnswers": [
-      "C. UI Policy"
+      "E. Approver [approver_user]"
     ],
     "multipleChoice": false
   },
   {
     "id": 248,
-    "text": "Which object is used in client-side scripts to interact with form fields?",
+    "text": "On the knowledge base record, which tab would you use to define which users are not able to write articles to the knowledge base?",
     "options": [
-      "A. GlideRecord",
-      "B. g_user",
-      "C. g_form",
-      "D. gs"
+      "A. Can Contribute",
+      "B. Cannot Author",
+      "C. Can Read",
+      "D. Can Write",
+      "E. Can Author"
     ],
     "correctAnswers": [
-      "C. g_form"
+      "A. Can Contribute"
     ],
     "multipleChoice": false
   },
   {
     "id": 249,
-    "text": "Which of the following statements is true about Client Scripts?",
+    "text": "What types of entities can receive task assignments, in ServiceNow? (Choose two.)",
     "options": [
-      "A. They run only on the server",
-      "B. They execute in the user's browser",
-      "C. They replace Business Rules",
-      "D. They can directly access the database"
+      "A. Users",
+      "B. Departments",
+      "C. Groups",
+      "D. Teams"
     ],
     "correctAnswers": [
-      "B. They execute in the user's browser"
+      "A. Users",
+      "C. Groups"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 250,
-    "text": "Which of the following is NOT a type of Client Script?",
+    "text": "The Report Designer contains different sections for configuring your report. Which section is used to adjust the look of your report, including colors, titles and legend layout?",
     "options": [
-      "A. onLoad",
-      "B. onChange",
-      "C. onSubmit",
-      "D. onDelete"
+      "A. Layout",
+      "B. Format",
+      "C. Configure",
+      "D. Style"
     ],
     "correctAnswers": [
-      "D. onDelete"
+      "D. Style"
     ],
     "multipleChoice": false
   },
   {
     "id": 251,
-    "text": "Which of the following scripts run on the server side? (Choose two.)",
+    "text": "How would you distinguish between a Base Class table and a Parent Class table?",
     "options": [
-      "A. Business Rules",
-      "B. Client Scripts",
-      "C. Script Includes",
-      "D. UI Policies"
+      "A. Extended tables are always extended from Parent tables. Extended tables are usually extended from Base tables.",
+      "B. Extended tables can be extended from Parent tables or Base tables; but they cannot be extended from both.",
+      "C. Base Class tables always have tables extended from them. Parent tables do not have tables extended from them.",
+      "D. Base Class table is not extended from another table, Parent class tables may be extended from another table."
     ],
     "correctAnswers": [
-      "A. Business Rules",
-      "C. Script Includes"
-    ],
-    "multipleChoice": true
-  },
-  {
-    "id": 252,
-    "text": "Which of the following is a valid use case for a Scheduled Job?",
-    "options": [
-      "A. Validate user input on a form",
-      "B. Run a script at a specified time or interval",
-      "C. Control field visibility",
-      "D. Assign records in real time"
-    ],
-    "correctAnswers": [
-      "B. Run a script at a specified time or interval"
+      "D. Base Class table is not extended from another table, Parent class tables may be extended from another table."
     ],
     "multipleChoice": false
   },
   {
-    "id": 253,
-    "text": "Which of the following can trigger an Email Notification?",
+    "id": 252,
+    "text": "When a custom table is created, which access control rules are automatically created? (Choose four.)",
     "options": [
-      "A. UI Policy",
-      "B. Client Script",
-      "C. Event",
-      "D. Form Layout"
+      "A. create",
+      "B. delete",
+      "C. execute",
+      "D. update",
+      "E. read",
+      "F. write"
     ],
     "correctAnswers": [
-      "C. Event"
+      "A. create",
+      "B. delete",
+      "E. read",
+      "F. write"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 253,
+    "text": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
+    "options": [
+      "A. Magnifier",
+      "B. Question mark",
+      "C. Gear",
+      "D. Chat bubbles"
+    ],
+    "correctAnswers": [
+      "C. Gear"
     ],
     "multipleChoice": false
   },
   {
     "id": 254,
-    "text": "Which object is used to write log messages on the server side?",
+    "text": "Which banner icon do you use to change your personal system settings, like your instance color scheme?",
     "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. gs",
-      "D. GlideAjax"
+      "A. Magnifier",
+      "B. Question mark",
+      "C. Gear",
+      "D. Chat bubbles"
     ],
     "correctAnswers": [
-      "C. gs"
+      "C. Gear"
     ],
     "multipleChoice": false
   },
   {
     "id": 255,
-    "text": "Which of the following is NOT a valid REST API method?",
+    "text": "When building an extended table from a base table, which fields do you need to create? (Choose two.)",
     "options": [
-      "A. GET",
-      "B. POST",
-      "C. DELETE",
-      "D. COPY"
+      "A. The fields that are not in the base table.",
+      "B. The mandatory fields for the base table.",
+      "C. The fields that are specific to the extended table.",
+      "D. The reference fields for the base table."
     ],
     "correctAnswers": [
-      "D. COPY"
+      "A. The fields that are not in the base table.",
+      "C. The fields that are specific to the extended table."
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 256,
-    "text": "Which of the following is a benefit of scoped applications?",
+    "text": "While showing a customer their Incident form, they ask to change the Priority field title to display their internal terminology PValue. How would you do that? (Choose two.)",
     "options": [
-      "A. Automatic access to all APIs",
-      "B. Reduced risk of naming collisions",
-      "C. No security boundaries",
-      "D. Unlimited cross-scope access"
+      "A. Right click on Priority and select Configure Label",
+      "B. Right click on Priority and select Configure Dictionary",
+      "C. Right click on Priority and select Configure Display Settings",
+      "D. Right click on Priority and select Configure Column"
     ],
     "correctAnswers": [
-      "B. Reduced risk of naming collisions"
+      "A. Right click on Priority and select Configure Label",
+      "B. Right click on Priority and select Configure Dictionary"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 257,
-    "text": "Which object is used to retrieve system property values in a script?",
+    "text": "As administrator, what must you do to access features of High Security Settings?",
     "options": [
-      "A. g_form.getProperty()",
-      "B. gs.getProperty()",
-      "C. g_user.getProperty()",
-      "D. GlideRecord.getProperty()"
+      "A. Impersonate Security Admin",
+      "B. Select Elevate Roles",
+      "C. Add security_admin role to your user account",
+      "D. Use System Administration > Elevate Roles module"
     ],
     "correctAnswers": [
-      "B. gs.getProperty()"
+      "B. Select Elevate Roles"
     ],
     "multipleChoice": false
   },
   {
     "id": 258,
-    "text": "Which of the following statements is true about Update Sets?",
+    "text": "What section on the notes tab, shows the history of the work documented on the record?",
     "options": [
-      "A. They track data changes",
-      "B. They track configuration changes",
-      "C. They replace source control",
-      "D. They apply automatically"
+      "A. Audit Log",
+      "B. Timeline",
+      "C. Journal",
+      "D. Diary",
+      "E. Activity"
     ],
     "correctAnswers": [
-      "B. They track configuration changes"
+      "E. Activity"
     ],
     "multipleChoice": false
   },
   {
     "id": 259,
-    "text": "Which role allows a user to impersonate another user?",
+    "text": "How would you navigate to the Schema map for a table?",
     "options": [
-      "A. itil",
-      "B. impersonator",
-      "C. admin",
-      "D. user_admin"
+      "A. System Definition > Tables; Select Table; Go to Related links and click Show Schema Map",
+      "B. System Dictionary > Show Schema Map; Select Table",
+      "C. System Definition > Show Schema Map; Select Table",
+      "D. System Definition > Dictionary; Select Table; Go to Related links and click Show Schema Map"
     ],
     "correctAnswers": [
-      "C. admin"
+      "A. System Definition > Tables; Select Table; Go to Related links and click Show Schema Map"
     ],
     "multipleChoice": false
   },
   {
     "id": 260,
-    "text": "Which of the following statements is true about Roles?",
+    "text": "Which is the base table of the configuration management database hierarchy?",
     "options": [
-      "A. Roles control what users can see and do",
-      "B. Roles are optional",
-      "C. Roles only apply to reports",
-      "D. Roles cannot be inherited"
+      "A. cmdb_ci",
+      "B. cmdb",
+      "C. cmdb_rel_ci",
+      "D. ucmdb"
     ],
     "correctAnswers": [
-      "A. Roles control what users can see and do"
+      "B. cmdb"
     ],
     "multipleChoice": false
   },
   {
     "id": 261,
-    "text": "Which of the following best describes a ServiceNow form?",
+    "text": "Which best describes a field in a ServiceNow table?",
     "options": [
-      "A. A collection of records from a table",
-      "B. A visual representation of reports",
-      "C. A page used to view and edit a single record",
-      "D. A workflow definition"
+      "A. A field is a table row.",
+      "B. A field is an item that appears in a menu list.",
+      "C. A field is a table cell that stores data.",
+      "D. A field is a record in a table."
     ],
     "correctAnswers": [
-      "C. A page used to view and edit a single record"
+      "C. A field is a table cell that stores data."
     ],
     "multipleChoice": false
   },
   {
     "id": 262,
-    "text": "Which feature allows users to add or remove fields from a form layout?",
+    "text": "What are examples of UI Actions relating to forms? (Choose three.)",
     "options": [
-      "A. List Editor",
-      "B. Form Designer",
-      "C. UI Policy",
-      "D. Dictionary Override"
+      "A. Form Columns",
+      "B. Form View",
+      "C. Form Buttons",
+      "D. Form Context Menu",
+      "E. Form Links"
     ],
     "correctAnswers": [
-      "B. Form Designer"
+      "C. Form Buttons",
+      "D. Form Context Menu",
+      "E. Form Links"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 263,
-    "text": "Which of the following statements is true about the Form Designer?",
+    "text": "Here is an example of the criteria set for a knowledge base: • Companies: ACME North America • Departments: HR • Groups: ACME Managers • Match All: Yes In this example, what users would have access to this knowledge base?",
     "options": [
-      "A. It can only remove fields from forms",
-      "B. It can add, remove, and rearrange fields on a form",
-      "C. It controls access to records",
-      "D. It replaces UI Policies"
+      "A. Members of the ACME Manager group, who are also members of HR Department and part of ACME North America",
+      "B. Employees of ACME North America, who are members of HR Department or the ACME Managers group",
+      "C. Users which are members of either ACME North America, or HR Department, or ACME Managers group",
+      "D. Members of the ACME Managers group, and HR department, regardless of geography"
     ],
     "correctAnswers": [
-      "B. It can add, remove, and rearrange fields on a form"
+      "A. Members of the ACME Manager group, who are also members of HR Department and part of ACME North America"
     ],
     "multipleChoice": false
   },
   {
     "id": 264,
-    "text": "Which of the following can be used to create a new field on a table?",
+    "text": "In Flow Designer, where is the data from an action stored so it can be used in subsequent actions in the flow?",
     "options": [
-      "A. Form Designer",
-      "B. List Layout",
-      "C. Application Navigator",
-      "D. Favorites"
+      "A. Data Pill",
+      "B. Data Element",
+      "C. Data Trigger",
+      "D. Field Value",
+      "E. Field Icon"
     ],
     "correctAnswers": [
-      "A. Form Designer"
+      "A. Data Pill"
     ],
     "multipleChoice": false
   },
   {
     "id": 265,
-    "text": "Which of the following statements is true about dictionary entries?",
+    "text": "A customer has asked for the following updates to a form: • Make Resolution code Mandatory, when state is changed to Resolved • Hide Major Incident check box, unless logged in user has Major Incident Manager role What type of rule(s) would you use to implement this requirement?",
     "options": [
-      "A. They define table relationships only",
-      "B. They define fields and their properties",
-      "C. They control user roles",
-      "D. They store configuration item data"
+      "A. Form Constraint",
+      "B. UI Design",
+      "C. Field Limiter",
+      "D. UI Policy",
+      "E. Dictionary Design"
     ],
     "correctAnswers": [
-      "B. They define fields and their properties"
+      "D. UI Policy"
     ],
     "multipleChoice": false
   },
   {
     "id": 266,
-    "text": "Which of the following is true about Reference fields?",
+    "text": "What setting allows users to view a Knowledge Base article even if they are not logged in?",
     "options": [
-      "A. They store the display value",
-      "B. They store the sys_id",
-      "C. They can only reference the User table",
-      "D. They cannot be indexed"
+      "A. The Public setting",
+      "B. The View All setting",
+      "C. The ESS role",
+      "D. The Allow All role"
     ],
     "correctAnswers": [
-      "B. They store the sys_id"
+      "A. The Public setting"
     ],
     "multipleChoice": false
   },
   {
     "id": 267,
-    "text": "Which object is used to retrieve records from the database?",
+    "text": "When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector? (Choose three.)",
     "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. GlideRecord",
-      "D. GlideAjax"
+      "A. Problem==Parent",
+      "B. HR Case->Parent",
+      "C. Catalog Task->Parent",
+      "D. Outage->Task number",
+      "E. Release Phase==Parent"
     ],
     "correctAnswers": [
-      "C. GlideRecord"
+      "B. HR Case->Parent",
+      "C. Catalog Task->Parent",
+      "D. Outage->Task number"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 268,
-    "text": "Which of the following scripts execute on the client side?",
+    "text": "How is the ServiceNow platform set up so that Administrators can easily configure their instances to send an email at the end of an upgrade?",
     "options": [
-      "A. Business Rules",
-      "B. Client Scripts",
-      "C. Script Includes",
-      "D. Scheduled Jobs"
+      "A. Administrators can update the email notification named \"System Upgraded\" in the System Logs module by adding the appropriate User to receive it.",
+      "B. Administrators can update the email notification named \"System Upgraded\" in the Notifications module by adding the appropriate User to receive it.",
+      "C. Administrators can write a Client Script to send out an email to the Administrator when an Update is complete.",
+      "D. Administrators can write a Business Rule to send out an email to the Administrator when an Update is complete."
     ],
     "correctAnswers": [
-      "B. Client Scripts"
+      "B. Administrators can update the email notification named \"System Upgraded\" in the Notifications module by adding the appropriate User to receive it."
     ],
     "multipleChoice": false
   },
   {
     "id": 269,
-    "text": "Which object is used to display messages on a form?",
+    "text": "A customer wants to be able to identify and track components of their infrastructure that support their eCommerce service. What ServiceNow products could support this requirement? (Choose three.)",
     "options": [
-      "A. GlideSystem (gs)",
-      "B. GlideRecord",
-      "C. g_form",
-      "D. g_user"
+      "A. Asset Management",
+      "B. Discovery",
+      "C. Configuration Management (CMDB)",
+      "D. Service Mapping",
+      "E. Performance Analytics"
     ],
     "correctAnswers": [
-      "C. g_form"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 270,
-    "text": "Which of the following is NOT a type of Client Script?",
-    "options": [
-      "A. onLoad",
-      "B. onChange",
-      "C. onSubmit",
-      "D. onDelete"
-    ],
-    "correctAnswers": [
-      "D. onDelete"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 271,
-    "text": "Which of the following scripts run on the server side? (Choose two.)",
-    "options": [
-      "A. Business Rules",
-      "B. Client Scripts",
-      "C. Script Includes",
-      "D. UI Policies"
-    ],
-    "correctAnswers": [
-      "A. Business Rules",
-      "C. Script Includes"
+      "B. Discovery",
+      "C. Configuration Management (CMDB)",
+      "D. Service Mapping"
     ],
     "multipleChoice": true
   },
   {
-    "id": 272,
-    "text": "Which of the following is a valid use case for a Scheduled Job?",
+    "id": 270,
+    "text": "For your implementation, the following tables are extended from each other: • Incident table is extended from Task table. • Super Incident table is extended from Incident table. In this situation, which table(s) are Parent, Child and Base tables? (Choose five.)",
     "options": [
-      "A. Validate user input on a form",
-      "B. Run a script at a specified time or interval",
-      "C. Control field visibility",
-      "D. Assign records in real time"
+      "A. Super Incident table is a Parent table",
+      "B. Incident table is a Child table",
+      "C. Super Incident table is a Base table",
+      "D. Incident table is a Base table",
+      "E. Task table is a Child table",
+      "F. Incident table is a Parent table",
+      "G. Super Incident table is a Child table",
+      "H. Task table is a Parent table",
+      "I. Task table is a Base table"
     ],
     "correctAnswers": [
-      "B. Run a script at a specified time or interval"
+      "B. Incident table is a Child table",
+      "F. Incident table is a Parent table",
+      "G. Super Incident table is a Child table",
+      "H. Task table is a Parent table",
+      "I. Task table is a Base table"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
-    "id": 273,
-    "text": "Which of the following can trigger an Email Notification?",
+    "id": 271,
+    "text": "What capability allows users to create dashboards with widgets to visualize data over time in order to identify areas of improvement?",
     "options": [
-      "A. UI Policy",
-      "B. Client Script",
-      "C. Event",
-      "D. Form Layout"
-    ],
-    "correctAnswers": [
-      "C. Event"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 274,
-    "text": "Which object is used to write log messages on the server side?",
-    "options": [
-      "A. g_form",
-      "B. g_user",
-      "C. gs",
-      "D. GlideAjax"
-    ],
-    "correctAnswers": [
-      "C. gs"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 275,
-    "text": "Which of the following is NOT a valid REST API method?",
-    "options": [
-      "A. GET",
-      "B. POST",
-      "C. DELETE",
-      "D. COPY"
-    ],
-    "correctAnswers": [
-      "D. COPY"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 276,
-    "text": "Which of the following is a benefit of scoped applications?",
-    "options": [
-      "A. Automatic access to all APIs",
-      "B. Reduced risk of naming collisions",
-      "C. No security boundaries",
-      "D. Unlimited cross-scope access"
-    ],
-    "correctAnswers": [
-      "B. Reduced risk of naming collisions"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 277,
-    "text": "Which object is used to retrieve system property values in a script?",
-    "options": [
-      "A. g_form.getProperty()",
-      "B. gs.getProperty()",
-      "C. g_user.getProperty()",
-      "D. GlideRecord.getProperty()"
-    ],
-    "correctAnswers": [
-      "B. gs.getProperty()"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 278,
-    "text": "Which of the following statements is true about Update Sets?",
-    "options": [
-      "A. They track data changes",
-      "B. They track configuration changes",
-      "C. They replace source control",
-      "D. They apply automatically"
-    ],
-    "correctAnswers": [
-      "B. They track configuration changes"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 279,
-    "text": "Which role allows a user to impersonate another user?",
-    "options": [
-      "A. itil",
-      "B. impersonator",
-      "C. admin",
-      "D. user_admin"
-    ],
-    "correctAnswers": [
-      "C. admin"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 280,
-    "text": "Which of the following statements is true about Roles?",
-    "options": [
-      "A. Roles control what users can see and do",
-      "B. Roles are optional",
-      "C. Roles only apply to reports",
-      "D. Roles cannot be inherited"
-    ],
-    "correctAnswers": [
-      "A. Roles control what users can see and do"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 281,
-    "text": "Which of the following best describes a ServiceNow report?",
-    "options": [
-      "A. A configuration record",
-      "B. A visual display of data from a table",
-      "C. A workflow definition",
-      "D. A script execution log"
-    ],
-    "correctAnswers": [
-      "B. A visual display of data from a table"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 282,
-    "text": "Which feature allows users to create charts and graphs from data?",
-    "options": [
-      "A. Import Sets",
+      "A. Scheduled Reports",
       "B. Performance Analytics",
-      "C. Update Sets",
-      "D. UI Policies"
+      "C. Analytics Reports",
+      "D. Reporting"
     ],
     "correctAnswers": [
       "B. Performance Analytics"
@@ -590,257 +472,431 @@ const CSA5 = [
     "multipleChoice": false
   },
   {
-    "id": 283,
-    "text": "Which of the following statements is true about reports?",
+    "id": 272,
+    "text": "Which type of ServiceNow script runs on the web browser?",
     "options": [
-      "A. Reports can only be viewed by administrators",
-      "B. Reports display data from tables",
-      "C. Reports cannot be shared",
-      "D. Reports do not support filters"
+      "A. Server script",
+      "B. Database script",
+      "C. Client script",
+      "D. Local script"
     ],
     "correctAnswers": [
-      "B. Reports display data from tables"
+      "C. Client script"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 273,
+    "text": "When selecting the Target table for an import, which tables can you select? (Choose three.)",
+    "options": [
+      "A. Tables outside of ServiceNow",
+      "B. Tables within the global scope",
+      "C. Related tables, using Dot Walk",
+      "D. Tables which allow write access to other applications",
+      "E. Tables within the existing application scope"
+    ],
+    "correctAnswers": [
+      "B. Tables within the global scope",
+      "D. Tables which allow write access to other applications",
+      "E. Tables within the existing application scope"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 274,
+    "text": "On Access Control Definitions, what are ways you can set the permissions on a Table? (Choose three.)",
+    "options": [
+      "A. Conditional Expressions",
+      "B. Roles",
+      "C. CRUD",
+      "D. Script that sets the answer variable to true or false",
+      "E. Groups"
+    ],
+    "correctAnswers": [
+      "A. Conditional Expressions",
+      "B. Roles",
+      "D. Script that sets the answer variable to true or false"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 275,
+    "text": "What tool is used to import data from various data sources, and map that data into ServiceNow tables?",
+    "options": [
+      "A. Transform Set",
+      "B. Data Pack",
+      "C. Update Set",
+      "D. Import Set"
+    ],
+    "correctAnswers": [
+      "D. Import Set"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 276,
+    "text": "When you set a policy that is applied to all data entered into the platform (UI, Import Sets, or Web Services), where does this policy run by default?",
+    "options": [
+      "A. Client",
+      "B. Network",
+      "C. Browser",
+      "D. Server"
+    ],
+    "correctAnswers": [
+      "D. Server"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 277,
+    "text": "On what part of the ServiceNow instance, would you find the option to Impersonate User?",
+    "options": [
+      "A. User Menu",
+      "B. Content Fame",
+      "C. Application Navigator",
+      "D. Module"
+    ],
+    "correctAnswers": [
+      "A. User Menu"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 278,
+    "text": "How would you describe the relationship between the Incident and Task table?",
+    "options": [
+      "A. Incident table has a one to many relationship with the Task table",
+      "B. Incident table is extended from Task table",
+      "C. Incident table is related to the Task table via the INC number",
+      "D. Incident table has a many to many relationship with the Task table",
+      "E. Incident table is a database view of the Task table"
+    ],
+    "correctAnswers": [
+      "B. Incident table is extended from Task table"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 279,
+    "text": "Which flow components allow you to specify when a flow should be run?",
+    "options": [
+      "A. Trigger and Condition Pill",
+      "B. Condition and Table",
+      "C. Trigger Criteria and Clock",
+      "D. Trigger and Condition",
+      "E. Scope and Trigger Condition"
+    ],
+    "correctAnswers": [
+      "D. Trigger and Condition"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 280,
+    "text": "Which feature helps to automatically allocate a critical, high-priority, service request to the appropriate assignment group or team member?",
+    "options": [
+      "A. Assignment Rule",
+      "B. User Policy",
+      "C. Predictive Intelligence",
+      "D. UI Policy"
+    ],
+    "correctAnswers": [
+      "A. Assignment Rule"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 281,
+    "text": "The Report Designer contains different sections for configuring your report. Which section is used to specify the name of the report, and the table or data source for the report?",
+    "options": [
+      "A. Type",
+      "B. Properties",
+      "C. Configure",
+      "D. Sources",
+      "E. Data"
+    ],
+    "correctAnswers": [
+      "E. Data"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 282,
+    "text": "You are editing a new incident record and would like the \"Save\" button to be located on the Form header. Which action would need to be taken for that button to appear?",
+    "options": [
+      "A. Context Menu > Form Design > add the “Save” button.",
+      "B. All > System Properties > UI Properties > Turn on the “glide.ui.advanced” property.",
+      "C. All > System Properties > UI Properties > Turn on the “Save” button.",
+      "D. Context Meru > Form Layout > add the “Save” button."
+    ],
+    "correctAnswers": [
+      "C. All > System Properties > UI Properties > Turn on the “Save” button."
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 283,
+    "text": "Which features ensures data consistency while importing data using import sets and web services?",
+    "options": [
+      "A. UI Policy",
+      "B. Data Policy",
+      "C. Business Rule",
+      "D. Client Script",
+      "E. CSDM"
+    ],
+    "correctAnswers": [
+      "B. Data Policy"
     ],
     "multipleChoice": false
   },
   {
     "id": 284,
-    "text": "Which of the following can be used to filter report data?",
+    "text": "When using Flow Designer, what is the Flow Execution initiated by?",
     "options": [
-      "A. UI Policies",
-      "B. Conditions",
-      "C. Update Sets",
-      "D. Business Rules"
+      "A. A flow logic",
+      "B. An existing subflow",
+      "C. An execution data pill",
+      "D. A trigger"
     ],
     "correctAnswers": [
-      "B. Conditions"
+      "D. A trigger"
     ],
     "multipleChoice": false
   },
   {
     "id": 285,
-    "text": "Which of the following is a characteristic of Performance Analytics?",
+    "text": "What is the name of the string that displays filter criteria?",
     "options": [
-      "A. Real-time form validation",
-      "B. Historical trend analysis",
-      "C. Client-side scripting",
-      "D. Table inheritance"
+      "A. Breadcrumb",
+      "B. Choice",
+      "C. Menu",
+      "D. Topic"
     ],
     "correctAnswers": [
-      "B. Historical trend analysis"
+      "A. Breadcrumb"
     ],
     "multipleChoice": false
   },
   {
     "id": 286,
-    "text": "Which of the following statements is true about dashboards?",
+    "text": "Which system property is added and set to true in order to see impersonation events in the System Log?",
     "options": [
-      "A. Dashboards display collections of reports and widgets",
-      "B. Dashboards can only show one report",
-      "C. Dashboards are only for administrators",
-      "D. Dashboards cannot be shared"
+      "A. glide.sys.all_impersonation",
+      "B. glide.user_setting",
+      "C. glide.impersonation_setting",
+      "D. glide.sys.log_impersonation",
+      "E. glide.sys.admin_login"
     ],
     "correctAnswers": [
-      "A. Dashboards display collections of reports and widgets"
+      "D. glide.sys.log_impersonation"
     ],
     "multipleChoice": false
   },
   {
     "id": 287,
-    "text": "Which of the following can be added to a dashboard?",
+    "text": "What process allows users to create, categorize, review, approve and browse important information in a centralized location that is shared by the entire organization?",
     "options": [
-      "A. Widgets",
-      "B. Update Sets",
-      "C. Import Sets",
-      "D. UI Policies"
+      "A. Self Service Management",
+      "B. Knowledge Management",
+      "C. Business Information Management",
+      "D. Information Portal Management",
+      "E. Knowledge-Centered Management"
     ],
     "correctAnswers": [
-      "A. Widgets"
+      "B. Knowledge Management"
     ],
     "multipleChoice": false
   },
   {
     "id": 288,
-    "text": "Which of the following is true about sharing reports and dashboards?",
+    "text": "A colleague wants to rearrange the columns on their My Work List. Once the user has navigated to the list, where should they navigate to select and arrange the columns?",
     "options": [
-      "A. They can only be shared with admins",
-      "B. They can be shared with users and groups",
-      "C. They cannot be shared",
-      "D. They are shared automatically"
+      "A. Right click on any column header, Context Menu > Configure > List Layout",
+      "B. Click List Context Menu > Configure > List Layout",
+      "C. Click List Context Menu > Personalize List",
+      "D. Click Personalize List"
     ],
     "correctAnswers": [
-      "B. They can be shared with users and groups"
+      "D. Click Personalize List"
     ],
     "multipleChoice": false
   },
   {
     "id": 289,
-    "text": "Which role is required to create reports?",
+    "text": "You are looking at a list of Active Incidents. You want to exclude Incidents with the state of Resolved. How might you do that?",
     "options": [
-      "A. itil",
-      "B. report_admin",
-      "C. admin",
-      "D. report_user"
+      "A. On Search, select State, type not Resolved, press enter",
+      "B. On State column title, right-click, select Filter Out > Resolved",
+      "C. On the list of records, locate and right-click on the Resolved value, select Filter Out",
+      "D. On the list of records, locate and right-click on the Resolved value, select Exclude",
+      "E. Click Funnel icon, click AND, Select Resolved, is Not, State, click Run"
     ],
     "correctAnswers": [
-      "D. report_user"
+      "C. On the list of records, locate and right-click on the Resolved value, select Filter Out"
     ],
     "multipleChoice": false
   },
   {
     "id": 290,
-    "text": "Which of the following can be used to schedule report delivery?",
+    "text": "Roles can inherit permissions from other roles. Which role inherits all of the permissions of the catalog role, and the user_criteria_admin role, plus has permissions to create Items and Services?",
     "options": [
-      "A. Scheduled Jobs",
-      "B. Email Notifications",
-      "C. Report Schedules",
-      "D. Business Rules"
+      "A. Sys Admin [sys_admin]",
+      "B. Catalog Admin [catalog_admin]",
+      "C. Catalog Author [sn_catalog_write]",
+      "D. Item Admin [sn_item_admin]"
     ],
     "correctAnswers": [
-      "C. Report Schedules"
+      "B. Catalog Admin [catalog_admin]"
     ],
     "multipleChoice": false
   },
   {
     "id": 291,
-    "text": "Which of the following is a valid export format for reports?",
+    "text": "What component of the ServiceNow infrastructure defines every table and field in the system?",
     "options": [
-      "A. PDF",
-      "B. XLS",
-      "C. CSV",
-      "D. All of the above"
+      "A. Schema",
+      "B. Field Map",
+      "C. Table Class Manager",
+      "D. Dictionary",
+      "E. Data Atlas"
     ],
     "correctAnswers": [
-      "D. All of the above"
+      "D. Dictionary"
     ],
     "multipleChoice": false
   },
   {
     "id": 292,
-    "text": "Which of the following statements is true about gauges?",
+    "text": "Which data consistency settings can be achieved using UI Policy? (Choose three.)",
     "options": [
-      "A. Gauges show single metric values",
-      "B. Gauges replace dashboards",
-      "C. Gauges can only show text",
-      "D. Gauges do not support thresholds"
+      "A. Setting fields to accept the data in an expected format",
+      "B. Setting fields to accept the data with ‘n’ number of characters",
+      "C. Setting fields hidden",
+      "D. Settings fields read-only",
+      "E. Setting fields mandatory"
     ],
     "correctAnswers": [
-      "A. Gauges show single metric values"
+      "C. Setting fields hidden",
+      "D. Settings fields read-only",
+      "E. Setting fields mandatory"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 293,
-    "text": "Which of the following is used to define targets and thresholds in Performance Analytics?",
+    "text": "A customer wants to use a client script to validate things on a form in order to make sure the submission makes sense. What type of client script would you recommend to meet this requirement?",
     "options": [
-      "A. Indicators",
-      "B. Widgets",
-      "C. Reports",
-      "D. Dashboards"
+      "A. onSubmit()",
+      "B. onSubmission()",
+      "C. onUpdate()",
+      "D. onLoad()"
     ],
     "correctAnswers": [
-      "A. Indicators"
+      "A. onSubmit()"
     ],
     "multipleChoice": false
   },
   {
     "id": 294,
-    "text": "Which of the following is true about scheduled report exports?",
+    "text": "An order from the Service Catalog has been placed. Two records in the Platform are created as a result. Which two records are associated with this newly ordered item? (Choose two.)",
     "options": [
-      "A. They require scripting",
-      "B. They can be sent via email",
-      "C. They only work for admins",
-      "D. They cannot be automated"
+      "A. A record of sc_req_item table",
+      "B. A record of sc_task",
+      "C. An incident record",
+      "D. A change record",
+      "E. A problem record"
     ],
     "correctAnswers": [
-      "B. They can be sent via email"
+      "A. A record of sc_req_item table",
+      "B. A record of sc_task"
     ],
-    "multipleChoice": false
+    "multipleChoice": true
   },
   {
     "id": 295,
-    "text": "Which of the following is NOT a type of report?",
+    "text": "What action will allow you to personalize layouts of columns in a list?",
     "options": [
-      "A. List",
-      "B. Bar",
-      "C. Pie",
-      "D. Workflow"
+      "A. Context Menu > View > Personalize",
+      "B. Click Gear Icon > Personalize window options > Select the appropriate columns",
+      "C. Select the column to be personalized and right at the header > Choose the options to personalize",
+      "D. Select the column to be personalized > Click Edit icon (Pencil) > Choose the options to personalize"
     ],
     "correctAnswers": [
-      "D. Workflow"
+      "B. Click Gear Icon > Personalize window options > Select the appropriate columns"
     ],
     "multipleChoice": false
   },
   {
     "id": 296,
-    "text": "Which of the following is true about report filters?",
+    "text": "An order for new office equipment has been placed through the Service Catalog. How would you view the lists of requests after the orders have been placed?",
     "options": [
-      "A. They limit the data displayed in a report",
-      "B. They change table structure",
-      "C. They apply only to dashboards",
-      "D. They cannot be modified"
+      "A. All > Tables and Columns > Tasks",
+      "B. In the Navigation Filter, type “requests.list\" and press the Enter key",
+      "C. All > Service Catalog > Requests",
+      "D. All > Service Catalog > Open Records > Items"
     ],
     "correctAnswers": [
-      "A. They limit the data displayed in a report"
+      "D. All > Service Catalog > Open Records > Items"
     ],
     "multipleChoice": false
   },
   {
     "id": 297,
-    "text": "Which of the following can be used to visualize trends over time?",
+    "text": "Which path would you take to access the table configuration page from a form?",
     "options": [
-      "A. List reports",
-      "B. Bar charts",
-      "C. Line charts",
-      "D. Gauges"
+      "A. The Form Context menu > View > Show Table",
+      "B. The Form Context menu > View > Table",
+      "C. The Form Context menu > Configure > Dictionary",
+      "D. The Form Context menu > Configure > Table"
     ],
     "correctAnswers": [
-      "C. Line charts"
+      "D. The Form Context menu > Configure > Table"
     ],
     "multipleChoice": false
   },
   {
     "id": 298,
-    "text": "Which of the following is true about dashboards?",
+    "text": "Which admin role is required to make changes to High Security Settings?",
     "options": [
-      "A. They are static and cannot be modified",
-      "B. They display real-time and historical data",
-      "C. They replace reports",
-      "D. They cannot include widgets"
+      "A. high_sec_admin",
+      "B. sn_acl_admin",
+      "C. admin",
+      "D. security_admin"
     ],
     "correctAnswers": [
-      "B. They display real-time and historical data"
+      "D. security_admin"
     ],
     "multipleChoice": false
   },
   {
     "id": 299,
-    "text": "Which of the following permissions is required to share a dashboard?",
+    "text": "What is the most common role that has access to almost all platform features, functions, and data?",
     "options": [
-      "A. itil",
-      "B. report_user",
-      "C. dashboard_admin",
-      "D. admin"
+      "A. Super User [sn_super_user]",
+      "B. Security Admin [securty_admin]",
+      "C. System Administrator [admin]",
+      "D. Base Admin [base_admin]",
+      "E. System Manager [sys_manager]"
     ],
     "correctAnswers": [
-      "C. dashboard_admin"
+      "C. System Administrator [admin]"
     ],
     "multipleChoice": false
   },
   {
     "id": 300,
-    "text": "Which of the following statements is true about Performance Analytics?",
+    "text": "When moving multiple update sets at one time, what might you do to facilitate the move?",
     "options": [
-      "A. It only shows current data",
-      "B. It provides historical trend analysis",
-      "C. It replaces reporting",
-      "D. It does not support dashboards"
+      "A. Preview",
+      "B. Batch",
+      "C. List",
+      "D. Map"
     ],
     "correctAnswers": [
-      "B. It provides historical trend analysis"
+      "B. Batch"
     ],
     "multipleChoice": false
-  },   
+  },
 ];
 
 export default CSA5;
