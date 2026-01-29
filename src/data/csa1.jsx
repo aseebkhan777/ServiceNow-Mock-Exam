@@ -205,7 +205,7 @@ const CSA = [
   },
   {
     "id": 15,
-    "text": "A REQ number in the Service Catalog represents",
+    "text": "A REQ number in the Service Catalog represents`¦",
     "options": [
       "A. the order number.",
       "B. the stage.",
@@ -238,7 +238,7 @@ const CSA = [
       "A. Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
       "B. Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions",
       "C. Use the Baseline Update Set to store the contents of items after they are changed the first time",
-      "D. Once an Update Set is closed as Complete, change it back to In Progress until it is applied to another instance"
+      "D. Once an Update Set is closed as ג€Completeג€, change it back to ג€In Progressג€ until it is applied to another instance"
     ],
     "correctAnswers": [
       "A. Avoid using the Default Update set as an Update Set for moving customizations from instance to instance"
@@ -321,60 +321,232 @@ const CSA = [
     "id": 23,
     "text": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?",
     "options": [
-      "A. A collection of workflows that manage IT services",
-      "B. A database that stores configuration items and their relationships",
-      "C. A repository of Service Catalog items",
-      "D. A reporting database for performance analytics"
+      "A. The CMDB contains data about tangible and intangible business assets",
+      "B. The CMDB contains the Business Rules that direct the intangible, configurable assets used by a company",
+      "C. The CMDB archives all Service Management PaaS equipment metadata and usage statistics",
+      "D. The CMDB contains ITIL process data pertaining to configuration items"
     ],
     "correctAnswers": [
-      "B. A database that stores configuration items and their relationships"
+      "A. The CMDB contains data about tangible and intangible business assets"
     ],
     "multipleChoice": false
   },
   {
     "id": 24,
-    "text": "Which role allows a user to impersonate another user?",
+    "text": "In what order should filter elements be specified?",
     "options": [
-      "A. itil",
-      "B. impersonator",
-      "C. admin",
-      "D. impersonate"
+      "A. Field, Operator, then Value",
+      "B. Field, Operator, then Condition",
+      "C. Operator, Condition, then Value",
+      "D. Value, Operator, then Field"
     ],
     "correctAnswers": [
-      "C. admin"
+      "A. Field, Operator, then Value"
     ],
     "multipleChoice": false
   },
   {
     "id": 25,
-    "text": "When impersonating a user, what happens to the original user's roles?",
+    "text": "Which statement is true about business rules?",
     "options": [
-      "A. They remain active",
-      "B. They are replaced by the impersonated user's roles",
-      "C. They are merged with the impersonated user's roles",
-      "D. They are disabled temporarily"
+      "A. A business rule must run before a database action occurs",
+      "B. A business rule can be a piece of Javascript",
+      "C. A business rule must not run before a database action occurs",
+      "D. A business rule monitors fields on a form"
     ],
     "correctAnswers": [
-      "B. They are replaced by the impersonated user's roles"
+      "B. A business rule can be a piece of Javascript"
     ],
     "multipleChoice": false
   },
   {
     "id": 26,
-    "text": "What is the purpose of user impersonation?",
+    "text": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)",
     "options": [
-      "A. Activate verbose logging",
-      "B. Testing and visibility",
-      "C. View custom perspectives",
-      "D. Unlock application master list"
+      "A. onSubmit",
+      "B. onUpdate",
+      "C. onCellEdit",
+      "D. onLoad",
+      "E. onEdit",
+      "F. onChange",
+      "G. onSave"
     ],
     "correctAnswers": [
-      "B. Testing and visibility"
+      "A. onSubmit",
+      "C. onCellEdit",
+      "D. onLoad",
+      "F. onChange"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 27,
+    "text": "Which type of tables may be extended by other tables, but do not extend another table?",
+    "options": [
+      "A. Base Tables",
+      "B. Core Tables",
+      "C. Extended Tables",
+      "D. Custom Tables"
+    ],
+    "correctAnswers": [
+      "A. Base Tables"
     ],
     "multipleChoice": false
   },
   {
-    "id": 27,
+    "id": 28,
+    "text": "Which of the following statement describes the purpose of an Order Guide?",
+    "options": [
+      "A. Order Guides restrict the number of items in an order to only one item per request",
+      "B. Order Guide provide a list of guidelines for Administrators on how to set up item variables",
+      "C. Order Guide provide the ability to order multiple, related items as one request",
+      "D. Order Guides take the user directly to the checkout without prompting for information"
+    ],
+    "correctAnswers": [
+      "C. Order Guide provide the ability to order multiple, related items as one request"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 29,
+    "text": "Which tool is used to have conversations with logged-in users in real-time?",
+    "options": [
+      "A. Connect Chat",
+      "B. Now Messenger",
+      "C. User Presence",
+      "D. Comments"
+    ],
+    "correctAnswers": [
+      "A. Connect Chat"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 30,
+    "text": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)",
+    "options": [
+      "A. Service Processes",
+      "B. User Permissions",
+      "C. Tables and Fields",
+      "D. A Database",
+      "E. The Dependency View"
+    ],
+    "correctAnswers": [
+      "A. Service Processes",
+      "C. Tables and Fields",
+      "D. A Database",
+      "E. The Dependency View"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 31,
+    "text": "What is a formatter? Select one of the following.",
+    "options": [
+      "A. A formatter allows you to configure applications on your instance",
+      "B. A formatter is a form element used to display information that is not a field in the record",
+      "C. A formatter allows you to populate fields automatically",
+      "D. A formatter is a set of conditions applied to a table to help find and work with data"
+    ],
+    "correctAnswers": [
+      "B. A formatter is a form element used to display information that is not a field in the record"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 32,
+    "text": "When searching using the App Navigator search field, what can be returned? (Choose four.)",
+    "options": [
+      "A. Names of Applications and Modules",
+      "B. Names of Modules",
+      "C. Names of Applications",
+      "D. Favorites",
+      "E. History Records",
+      "F. Titles of Dashboard Gauges"
+    ],
+    "correctAnswers": [
+      "A. Names of Applications and Modules",
+      "B. Names of Modules",
+      "C. Names of Applications",
+      "D. Favorites"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 33,
+    "text": "Which technique is used to get information from a series of referenced fields from different tables?",
+    "options": [
+      "A. Table-Walking",
+      "B. Sys_ID Pulling",
+      "C. Dot-Walking",
+      "D. Record-Hopping"
+    ],
+    "correctAnswers": [
+      "C. Dot-Walking"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 34,
+    "text": "What is a schema map?",
+    "options": [
+      "A. A schema map enables administrators to define records from specific tables as trouble sources for Configuration Items",
+      "B. A schema map graphically organizes the visual task boards for the CMDB",
+      "C. A schema map graphically displays the Configuration Items that support a business service",
+      "D. A schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema"
+    ],
+    "correctAnswers": [
+      "D. A schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 35,
+    "text": "Which one of the following statements best describes the purpose of an Update Set?",
+    "options": [
+      "A. An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems",
+      "B. By default, an Update Set includes customizations, Business Rules, and homepages",
+      "C. An Update Set is a group of customizations that is moved from Production to Development",
+      "D. By default, the changes included in an Update Set are visible only in the instance to which they are applied"
+    ],
+    "correctAnswers": [
+      "A. An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 36,
+    "text": "Which of the following can be customized through the Basic Configuration UI 16 module? (Choose three.)",
+    "options": [
+      "A. Banner Image",
+      "B. Record Number Format",
+      "C. Browser Tab Title",
+      "D. System Date Format",
+      "E. Form Header Size"
+    ],
+    "correctAnswers": [
+      "A. Banner Image",
+      "C. Browser Tab Title",
+      "D. System Date Format"
+    ],
+    "multipleChoice": true
+  },
+  {
+    "id": 37,
+    "text": "What is the function of user impersonation?",
+    "options": [
+      "A. Testing and visibility",
+      "B. Activate verbose logging",
+      "C. View custom perspectives",
+      "D. Unlock Application master list"
+    ],
+    "correctAnswers": [
+      "A. Testing and visibility"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 38,
     "text": "What information does the System Dictionary contain?",
     "options": [
       "A. The human-readable labels and language settings",
@@ -388,7 +560,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 28,
+    "id": 39,
     "text": "When working on a form, what is the difference between Insert and Update operations?",
     "options": [
       "A. Insert creates a new record and Update saves changes, both remain on the form",
@@ -402,7 +574,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 29,
+    "id": 40,
     "text": "How is the Event Log different from the Event Registry?",
     "options": [
       "A. Event Log contains generated Events, the Event Registry is a table of Event definitions",
@@ -412,160 +584,6 @@ const CSA = [
     ],
     "correctAnswers": [
       "A. Event Log contains generated Events, the Event Registry is a table of Event definitions"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 30,
-    "text": "What is a Dictionary Override?",
-    "options": [
-      "A. A Dictionary Override is an incoming customer update in an Update Set which applies to the same objects as a newer local customer update",
-      "B. A Dictionary Override is the addition, modification, or removal of anything that could have an effect on IT services",
-      "C. A Dictionary Override is a task within a flow that requests an action before the flow can continue",
-      "D. A Dictionary Override sets field properties in extended tables"
-    ],
-    "correctAnswers": [
-      "D. A Dictionary Override sets field properties in extended tables"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 31,
-    "text": "Which group of permissions is used to control Application and Module access?",
-    "options": [
-      "A. Access Control Rules",
-      "B. UI Policies",
-      "C. Roles",
-      "D. Assignment Rules"
-    ],
-    "correctAnswers": [
-      "C. Roles"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 32,
-    "text": "What is a Record Producer?",
-    "options": [
-      "A. A workflow that generates approvals and tasks",
-      "B. A catalog item that creates records in tables",
-      "C. A reporting tool for Service Catalog",
-      "D. A UI Page used for data imports"
-    ],
-    "correctAnswers": [
-      "B. A catalog item that creates records in tables"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 33,
-    "text": "Which of the following statements does NOT apply when extending an existing table?",
-    "options": [
-      "A. The parent table's Access Controls are evaluated when determining access to the new table's records and fields",
-      "B. The new table inherits the functionality built into the parent table",
-      "C. The new table inherits all of the fields from the parent table",
-      "D. You must script and configure all required behaviors"
-    ],
-    "correctAnswers": [
-      "D. You must script and configure all required behaviors"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 34,
-    "text": "Which of the following CANNOT be debugged using the Field Watcher?",
-    "options": [
-      "A. Business Rules",
-      "B. Script Includes",
-      "C. Client Scripts",
-      "D. Access Controls"
-    ],
-    "correctAnswers": [
-      "B. Script Includes"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 35,
-    "text": "Which objects can be used in Inbound Action scripts?",
-    "options": [
-      "A. current and previous",
-      "B. current and email",
-      "C. current and event",
-      "D. current and producer"
-    ],
-    "correctAnswers": [
-      "B. current and email"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 36,
-    "text": "Which one of the following is part of the client-side scripting API?",
-    "options": [
-      "A. workflow.scratchpad",
-      "B. GlideUser object (g_user)",
-      "C. current and previous objects",
-      "D. GlideSystem object (gs)"
-    ],
-    "correctAnswers": [
-      "B. GlideUser object (g_user)"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 37,
-    "text": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?",
-    "options": [
-      "A. Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
-      "B. Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions",
-      "C. Use the Baseline Update Set to store the contents of items after they are changed the first time",
-      "D. Once an Update Set is closed as Complete, change it back to In Progress until it is applied to another instance"
-    ],
-    "correctAnswers": [
-      "A. Avoid using the Default Update set as an Update Set for moving customizations from instance to instance"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 38,
-    "text": "Which of the following is used to initiate a flow?",
-    "options": [
-      "A. A Trigger",
-      "B. Core Action",
-      "C. A spoke",
-      "D. An Event"
-    ],
-    "correctAnswers": [
-      "A. A Trigger"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 39,
-    "text": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?",
-    "options": [
-      "A. Service Catalog variables can only be used in Record Producers",
-      "B. Service Catalog variables can only be used in Order Guides",
-      "C. Service Catalog variables cannot affect the order price",
-      "D. Service Catalog variables are global by default"
-    ],
-    "correctAnswers": [
-      "D. Service Catalog variables are global by default"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 40,
-    "text": "Which one of the following statements is true about Column Context Menus?",
-    "options": [
-      "A. It displays actions such as creating quick reports, configuring the list, and exporting data",
-      "B. It displays actions related to filtering options, assigning tags, and search",
-      "C. It displays actions related to viewing and filtering the entire list",
-      "D. It displays actions such as view form, view related task, and add relationship"
-    ],
-    "correctAnswers": [
-      "A. It displays actions such as creating quick reports, configuring the list, and exporting data"
     ],
     "multipleChoice": false
   },
@@ -601,130 +619,32 @@ const CSA = [
     "id": 43,
     "text": "What is a Record Producer?",
     "options": [
-      "A. A workflow that generates approvals and tasks",
-      "B. A catalog item that creates records in tables",
-      "C. A reporting tool for Service Catalog",
-      "D. A UI Page used for data imports"
+      "A. A Record Producer is a type of Catalog Item that is used for Requests, not Services",
+      "B. A Record Producer creates user records",
+      "C. A Record Producer is a type of Catalog Item that provides easy ordering by bundling requests",
+      "D. A Record Producer is a type of a Catalog Item that allows users to create task-based records from the Service Catalog"
     ],
     "correctAnswers": [
-      "B. A catalog item that creates records in tables"
+      "D. A Record Producer is a type of a Catalog Item that allows users to create task-based records from the Service Catalog"
     ],
     "multipleChoice": false
   },
   {
     "id": 44,
-    "text": "Which of the following statements does NOT apply when extending an existing table?",
+    "text": "Create Incident, Password Reset, and Report outage: what do these services in the Service Catalog have in common?",
     "options": [
-      "A. The parent table's Access Controls are evaluated when determining access to the new table's records and fields",
-      "B. The new table inherits the functionality built into the parent table",
-      "C. The new table inherits all of the fields from the parent table",
-      "D. You must script and configure all required behaviors"
+      "A. They direct the user to a record producer",
+      "B. They direct the user to a catalog property",
+      "C. They direct the user to a catalog UI policy",
+      "D. They direct the user to a catalog client script"
     ],
     "correctAnswers": [
-      "D. You must script and configure all required behaviors"
+      "A. They direct the user to a record producer"
     ],
     "multipleChoice": false
   },
   {
     "id": 45,
-    "text": "Which of the following CANNOT be debugged using the Field Watcher?",
-    "options": [
-      "A. Business Rules",
-      "B. Script Includes",
-      "C. Client Scripts",
-      "D. Access Controls"
-    ],
-    "correctAnswers": [
-      "B. Script Includes"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 46,
-    "text": "Which objects can be used in Inbound Action scripts?",
-    "options": [
-      "A. current and previous",
-      "B. current and email",
-      "C. current and event",
-      "D. current and producer"
-    ],
-    "correctAnswers": [
-      "B. current and email"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 47,
-    "text": "Which one of the following is part of the client-side scripting API?",
-    "options": [
-      "A. workflow.scratchpad",
-      "B. GlideUser object (g_user)",
-      "C. current and previous objects",
-      "D. GlideSystem object (gs)"
-    ],
-    "correctAnswers": [
-      "B. GlideUser object (g_user)"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 48,
-    "text": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?",
-    "options": [
-      "A. Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
-      "B. Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions",
-      "C. Use the Baseline Update Set to store the contents of items after they are changed the first time",
-      "D. Once an Update Set is closed as Complete, change it back to In Progress until it is applied to another instance"
-    ],
-    "correctAnswers": [
-      "A. Avoid using the Default Update set as an Update Set for moving customizations from instance to instance"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 49,
-    "text": "Which of the following is used to initiate a flow?",
-    "options": [
-      "A. A Trigger",
-      "B. Core Action",
-      "C. A spoke",
-      "D. An Event"
-    ],
-    "correctAnswers": [
-      "A. A Trigger"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 50,
-    "text": "For Administrators creating new Service Catalog items, what is a characteristic they should know about Service Catalog variables?",
-    "options": [
-      "A. Service Catalog variables can only be used in Record Producers",
-      "B. Service Catalog variables can only be used in Order Guides",
-      "C. Service Catalog variables cannot affect the order price",
-      "D. Service Catalog variables are global by default"
-    ],
-    "correctAnswers": [
-      "D. Service Catalog variables are global by default"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 51,
-    "text": "Which one of the following statements is true about Column Context Menus?",
-    "options": [
-      "A. It displays actions such as creating quick reports, configuring the list, and exporting data",
-      "B. It displays actions related to filtering options, assigning tags, and search",
-      "C. It displays actions related to viewing and filtering the entire list",
-      "D. It displays actions such as view form, view related task, and add relationship"
-    ],
-    "correctAnswers": [
-      "A. It displays actions such as creating quick reports, configuring the list, and exporting data"
-    ],
-    "multipleChoice": false
-  },
-  {
-    "id": 52,
     "text": "What is the Import Set Table?",
     "options": [
       "A. A table where data will be placed, post-transformation",
@@ -738,7 +658,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 53,
+    "id": 46,
     "text": "What is a characteristic of importing data into ServiceNow?",
     "options": [
       "A. An existing Transform Map can be used one time on the same import set",
@@ -752,7 +672,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 54,
+    "id": 47,
     "text": "What module in the Service Catalog application does an Administrator access to begin creating a new item?",
     "options": [
       "A. Maintain Categories",
@@ -766,7 +686,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 55,
+    "id": 48,
     "text": "Which of the following allows a user to edit field values in a list without opening the form?",
     "options": [
       "A. Data Editor",
@@ -780,7 +700,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 56,
+    "id": 49,
     "text": "Which three Variable Types can be added to a Service Catalog Item?",
     "options": [
       "A. True/False, Multiple Choice, and Ordered",
@@ -794,7 +714,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 57,
+    "id": 50,
     "text": "How are Workflows moved between instances?",
     "options": [
       "A. Workflows are moved using Update Sets",
@@ -808,7 +728,7 @@ const CSA = [
     "multipleChoice": false
   },
   {
-    "id": 58,
+    "id": 51,
     "text": "The baseline Service Catalog homepage contains links to which of the following components?",
     "options": [
       "A. Record Producers, Order Guides, and Catalog Items",
@@ -822,8 +742,106 @@ const CSA = [
     "multipleChoice": false
   },
   {
+    "id": 52,
+    "text": "Which of the following statements is true when a new table is created by extending another table?",
+    "options": [
+      "A. The new table archives the parent table and assumed its roles in the database",
+      "B. The new table inherits all of the Business Rules, Client Scripts, and UI Policies of the parent table, but none of the existing fields",
+      "C. The new table inherits all of the fields of the parent table and can also contain new fields unique to itself",
+      "D. The new table inherits all of the fields, but does not inherit Access Control rules, Client Scripts, and UI Policies of the parent table"
+    ],
+    "correctAnswers": [
+      "C. The new table inherits all of the fields of the parent table and can also contain new fields unique to itself"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 53,
+    "text": "Where can Admins check which release is running on an ServiceNow instance?",
+    "options": [
+      "A. Memory Stats module",
+      "B. Stats module",
+      "C. System.upgraded table",
+      "D. Transactions log"
+    ],
+    "correctAnswers": [
+      "B. Stats module"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 54,
+    "text": "A knowledge article must be which of the following states to display to a user?",
+    "options": [
+      "A. Published",
+      "B. Drafted",
+      "C. Retired",
+      "D. Reviewed"
+    ],
+    "correctAnswers": [
+      "A. Published"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 55,
+    "text": "What is the name of the conversational bot platform that provides assistance to help users obtain information, make decisions, and perform common tasks?",
+    "options": [
+      "A. Answer Agent",
+      "B. live Feed",
+      "C. Virtual Agent",
+      "D. Connect Chat"
+    ],
+    "correctAnswers": [
+      "C. Virtual Agent"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 56,
+    "text": "What is the purpose of a Related List?",
+    "options": [
+      "A. To create a one-to-many relationship",
+      "B. To dot-walk to a core table",
+      "C. To present related fields",
+      "D. To present related records"
+    ],
+    "correctAnswers": [
+      "D. To present related records"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 57,
+    "text": "Which one of the following statements describes the purpose of a Service Catalog flow?",
+    "options": [
+      "A. A Service Catalog flow generates three basic components: item variable types, tasks, and approvals",
+      "B. Although a Service Catalog flow cannot send notifications, the flow drives complex fulfillment processes",
+      "C. A Service Catalog flow is used to drive complex fulfillment processes and sends notifications to defined users or groups",
+      "D. A Service Catalog flow generates three basic components: item variable types, tasks, and notifications"
+    ],
+    "correctAnswers": [
+      "C. A Service Catalog flow is used to drive complex fulfillment processes and sends notifications to defined users or groups"
+    ],
+    "multipleChoice": false
+  },
+  {
+    "id": 58,
+    "text": "Which term best describes something that is created, has worked performed upon it, and is eventually moved to a state of closed?",
+    "options": [
+      "A. report",
+      "B. flow",
+      "C. event",
+      "D. task"
+    ],
+    "correctAnswers": [
+      "D. task"
+    ],
+    "multipleChoice": false
+  },
+  {
     "id": 59,
-    "text": "Which are valid ServiceNow User Authentication Methods? (Choose three.)",
+    "text": "Which are valid Service Now User Authentication Methods? (Choose three.)",
     "options": [
       "A. XML feed",
       "B. Local database",
@@ -856,7 +874,6 @@ const CSA = [
     ],
     "multipleChoice": true
   },
-  
 ];
 
 export default CSA;
