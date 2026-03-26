@@ -33,7 +33,7 @@ const Question = ({ question, selectedOption, onSelectOption, index }) => {
             : selectedOption === option;
 
           const hasSelection = question.multipleChoice
-            ? selectedOption && selectedOption.length > 0
+            ? selectedOption && selectedOption.length >= (question.correctAnswers?.length || 1)
             : selectedOption != null;
 
           const isCorrectOption = question.correctAnswers?.includes(option);
