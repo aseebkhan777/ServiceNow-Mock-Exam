@@ -657,7 +657,7 @@ const CSDM4 = [
 },
 {
   id: 49,
-  text: "The CMDB Configuration Manager is using the CI Class Manager to manage the group ownership of CI classes and needs to leverage the ownership value specified in the CI Class Manager. When configuring a CMDB Data Manager policy, which group reference field should be set?",
+  text: "The CMDB Configuration Manager is using the CI Class Manager to manage the group ownership of CI classes and needs to leverage the ownership value specified in the CI Class Manager. When configuring a CMDB Data Manager policy. Which group reference field should be set?",
   options: [
     "Managed By Group",
     "Approval Group",
