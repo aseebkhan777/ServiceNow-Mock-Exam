@@ -20,6 +20,7 @@ import CSDM1 from "../data/csdm1";
 import CSDM2 from "../data/csdm2";
 import CSDM3 from "../data/csdm3";
 import CSDM4 from "../data/csdm4";
+import CSDMII from "../data/csdmII";
 import TEST from "../data/test";
 
 // Aggregate all questions
@@ -31,6 +32,7 @@ const allQuestions = [
   ...[...CSA1, ...CSA2, ...CSA3, ...CSA4, ...CSA5, ...CSA6].map(q => ({ ...q, examSource: "CSA" })),
   ...[...CAD1, ...CAD2, ...CAD3].map(q => ({ ...q, examSource: "CAD" })),
   ...[...CSDM1, ...CSDM2, ...CSDM3, ...CSDM4].map(q => ({ ...q, examSource: "CSDM" })),
+  ...CSDMII.map(q => ({ ...q, examSource: "CSDMII" })),
   ...TEST.map(q => ({ ...q, examSource: "TEST" }))
 ].filter(q => q && q.text && q.correctAnswers); // filter out invalid entries just in case
 

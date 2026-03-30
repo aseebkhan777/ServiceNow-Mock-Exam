@@ -10,6 +10,7 @@ const exams = [
   { id: "CAD", title: "CAD", desc: "Certified App Developer (All Questions)", color: "bg-orange-500" },
   { id: "CSA", title: "CSA", desc: "System Admin (All Questions)", color: "bg-emerald-500" },
   { id: "CSDM", title: "CSDM", desc: "Common Service Data Model (All Questions)", color: "bg-red-900" },
+  { id: "CSDMII", title: "CSDM-II", desc: "Common Service Data Model (Part II)", color: "bg-green-900" },
   { id: "TEST", title: "TEST EXAM", desc: "Short 5-question verification test", color: "bg-gray-800" },
 ];
 
