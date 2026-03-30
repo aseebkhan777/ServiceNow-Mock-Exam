@@ -439,7 +439,7 @@ const CSDM4 = [
   multipleChoice: false
 },
 {
-  id: 33
+  id: 33,
   text: "A CMDB Configuration Manager is reviewing the metrics on the CMDB Health Dashboard's Correctness Scorecard for the Server class which consists of a total of 60,000 servers in the CMDB. . For the Duplicate metric, it shows Healthy Cls/Evaluated as 59,000/60,000. . For the Orphan metric, it shows Healthy Cls/Evaluated as 45,000/50,000. Which configuration explains the difference in the scope of Server Cls (60,000 vs. 50,000) evaluated between the two metrics?",
   options: [
     "The Orphan metric has a CMDB Group configured for the Server class.",

@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
 import SessionTimeout from "./components/SessionTimeout";
+import GlobalSearch from "./components/GlobalSearch";
 
 // Authentication Wrapper
 const ProtectedRoute = ({ children }) => {
@@ -63,6 +64,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Result />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/search"
+            element={
+              <ProtectedRoute>
+                <GlobalSearch />
               </ProtectedRoute>
             }
           />

@@ -7,19 +7,9 @@ const exams = [
   { id: "SPM", title: "SPM", desc: "Strategic Portfolio Management", color: "bg-purple-500" },
   { id: "ITSM", title: "ITSM", desc: "IT Service Management", color: "bg-indigo-500" },
   { id: "ITOM", title: "ITOM", desc: "IT Operations Management", color: "bg-teal-500" },
-  { id: "CAD1", title: "CAD 1", desc: "Certified App Developer I", color: "bg-orange-500" },
-  { id: "CAD2", title: "CAD 2", desc: "Certified App Developer II", color: "bg-orange-600" },
-  { id: "CAD3", title: "CAD 3", desc: "Certified App Developer III", color: "bg-orange-700" },
-  { id: "CSA1", title: "CSA 1", desc: "Start System Admin I", color: "bg-emerald-500" },
-  { id: "CSA2", title: "CSA 2", desc: "System Admin II", color: "bg-emerald-600" },
-  { id: "CSA3", title: "CSA 3", desc: "System Admin III", color: "bg-emerald-700" },
-  { id: "CSA4", title: "CSA 4", desc: "System Admin IV", color: "bg-emerald-800" },
-  { id: "CSA5", title: "CSA 5", desc: "System Admin V", color: "bg-emerald-900" },
-  { id: "CSA6", title: "CSA 6", desc: "System Admin VI", color: "bg-green-900" },
-  { id: "CSDM1", title: "CSDM 1", desc: "Common Service Data Model I", color: "bg-red-900" },
-  { id: "CSDM2", title: "CSDM 2", desc: "Common Service Data Model II", color: "bg-blue-900" },
-  { id: "CSDM3", title: "CSDM 3", desc: "Common Service Data Model III", color: "bg-yellow-900" },
-  { id: "CSDM4", title: "CSDM 4", desc: "Common Service Data Model IV", color: "bg-green-900" },
+  { id: "CAD", title: "CAD", desc: "Certified App Developer (All Questions)", color: "bg-orange-500" },
+  { id: "CSA", title: "CSA", desc: "System Admin (All Questions)", color: "bg-emerald-500" },
+  { id: "CSDM", title: "CSDM", desc: "Common Service Data Model (All Questions)", color: "bg-red-900" },
   { id: "TEST", title: "TEST EXAM", desc: "Short 5-question verification test", color: "bg-gray-800" },
 ];
 
@@ -57,6 +47,16 @@ const Home = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            {/* Global Search Button */}
+            <button
+              onClick={() => navigate("/search")}
+              className="flex items-center gap-2 text-sm font-semibold text-royal-azure bg-royal-azure/5 hover:bg-royal-azure/15 px-4 py-2 rounded-xl transition-colors border border-royal-azure/20"
+              title="Global Question Search"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              Search All
+            </button>
+
             {/* User Profile / Status */}
             <div className="hidden sm:block text-sm font-medium text-gray-500">
               {name ? `Hello, ${name}` : 'Welcome'}
