@@ -248,7 +248,7 @@ function Login() {
                     }}
                   />
 
-                  {/* Star 2 - Start at 120 deg */}
+
                   <motion.path
                     d="M0 -8 L2 -2 L8 -2 L3 2 L5 8 L0 5 L-5 8 L-3 2 L-8 -2 L-2 -2 Z"
                     fill="#FFD700"
