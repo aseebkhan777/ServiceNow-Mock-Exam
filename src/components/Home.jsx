@@ -11,6 +11,7 @@ const exams = [
   { id: "CSA", title: "CSA", desc: "System Admin (All Questions)", color: "bg-emerald-500" },
   { id: "CSDM", title: "CSDM", desc: "Common Service Data Model (All Questions)", color: "bg-red-900" },
   { id: "CSDMII", title: "CSDM-II", desc: "Common Service Data Model (Part II)", color: "bg-green-900" },
+  { id: "CSDMIII", title: "CSDM-III", desc: "Common Service Data Model (Part III)", color: "bg-blue-900" },
   { id: "TEST", title: "TEST EXAM", desc: "Short 5-question verification test", color: "bg-gray-800" },
 ];
 
