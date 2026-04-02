@@ -19,6 +19,7 @@ import CSDM2 from "../data/csdm2";
 import CSDM3 from "../data/csdm3";
 import CSDM4 from "../data/csdm4";
 import CSDMII from "../data/csdmII";
+import CSDMIII from "../data/csdmIII";
 import TEST from "../data/test";
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
@@ -48,6 +49,7 @@ const Quiz = () => {
       case "CAD": selectedQuestions = [...CAD1, ...CAD2, ...CAD3]; break;
       case "CSDM": selectedQuestions = [...CSDM1, ...CSDM2, ...CSDM3, ...CSDM4]; break;
       case "CSDMII": selectedQuestions = CSDMII; break;
+      case "CSDMIII": selectedQuestions = CSDMIII; break;
       case "TEST": selectedQuestions = TEST; break;
       default: selectedQuestions = SPM;
     }
