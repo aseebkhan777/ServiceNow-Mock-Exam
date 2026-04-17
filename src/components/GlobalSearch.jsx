@@ -22,6 +22,10 @@ import CSDM3 from "../data/csdm3";
 import CSDM4 from "../data/csdm4";
 import CSDMII from "../data/csdmII";
 import CSDMIII from "../data/csdmIII";
+import HAM1 from "../data/ham1";
+import HAM2 from "../data/ham2";
+import HAM3 from "../data/ham3";
+import HAM4 from "../data/ham4";
 import TEST from "../data/test";
 
 // Aggregate all questions
@@ -35,7 +39,11 @@ const allQuestions = [
   ...[...CSDM1, ...CSDM2, ...CSDM3, ...CSDM4].map(q => ({ ...q, examSource: "CSDM" })),
   ...CSDMII.map(q => ({ ...q, examSource: "CSDMII" })),
   ...CSDMIII.map(q => ({ ...q, examSource: "CSDMIII" })),
-  ...TEST.map(q => ({ ...q, examSource: "TEST" }))
+  ...HAM1.map(q => ({ ...q, examSource: "HAM1" })),
+  ...HAM2.map(q => ({ ...q, examSource: "HAM2" })),
+  ...HAM3.map(q => ({ ...q, examSource: "HAM3" })),
+  ...HAM4.map(q => ({ ...q, examSource: "HAM4" })),
+  ...TEST.map(q => ({ ...q, examSource: "TEST" })),
 ].filter(q => q && q.text && q.correctAnswers); // filter out invalid entries just in case
 
 const GlobalSearch = () => {
