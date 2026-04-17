@@ -12,6 +12,10 @@ const exams = [
   { id: "CSDM", title: "CSDM", desc: "Common Service Data Model (All Questions)", color: "bg-red-900" },
   { id: "CSDMII", title: "CSDM-II", desc: "Common Service Data Model (Part II)", color: "bg-green-900" },
   { id: "CSDMIII", title: "CSDM-III", desc: "Common Service Data Model (Part III)", color: "bg-blue-900" },
+    { id: "HAM1", title: "HAM-I", desc: "Hardware Asset Management 1", color: "bg-orange-900" },
+    { id: "HAM2", title: "HAM-II", desc: "Hardware Asset Management 2", color: "bg-green-900" },
+    { id: "HAM3", title: "HAM-III", desc: "Hardware Asset Managemen 3", color: "bg-yellow-900" },
+    { id: "HAM4", title: "HAM-IV", desc: "Hardware Asset Management4", color: "bg-red-900" },
   { id: "TEST", title: "TEST EXAM", desc: "Short 5-question verification test", color: "bg-gray-800" },
 ];
 
