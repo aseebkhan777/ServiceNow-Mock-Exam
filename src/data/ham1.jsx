@@ -1,4 +1,4 @@
-const ham1 = [
+const HAM1 = [
   {
     "id": 1,
     "text": "What are the three tiers of Lifecycle Management? (Choose three.)",
@@ -934,4 +934,4 @@ const ham1 = [
   "multipleChoice": false
 },
 ]; 
-export default ham1;
+export default HAM1;
