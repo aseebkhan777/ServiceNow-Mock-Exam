@@ -20,6 +20,10 @@ import CSDM3 from "../data/csdm3";
 import CSDM4 from "../data/csdm4";
 import CSDMII from "../data/csdmII";
 import CSDMIII from "../data/csdmIII";
+import HAM1 from "../data/ham1";
+import HAM2 from "../data/ham2";
+import HAM3 from "../data/ham3";
+import HAM4 from "../data/ham4";
 import TEST from "../data/test";
 import { shuffleArray, getRandomQuestions } from "../utils/shuffle";
 import Question from "./Question";
@@ -50,6 +54,10 @@ const Quiz = () => {
       case "CSDM": selectedQuestions = [...CSDM1, ...CSDM2, ...CSDM3, ...CSDM4]; break;
       case "CSDMII": selectedQuestions = CSDMII; break;
       case "CSDMIII": selectedQuestions = CSDMIII; break;
+         case "HAM1": selectedQuestions = HAM1; break;
+         case "HAM2": selectedQuestions = HAM2; break;
+         case "HAM3": selectedQuestions = HAM3; break;
+         case "HAM4": selectedQuestions = HAM4; break;
       case "TEST": selectedQuestions = TEST; break;
       default: selectedQuestions = SPM;
     }
